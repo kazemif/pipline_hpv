@@ -76,6 +76,20 @@ __pycache__/
 - Inclure un README clair pour faciliter l'utilisation.
 - Ajouter le dossier `Ref/` dans GitHub pour inclure le génome référentiel.
 
+
+ ## Pour lancer tout le pipeline automatiquement avec Python
+- python3 run_pipeline.py data_test/ Ref/sequence.fasta results/
+
+## Arguments :
+## data_test/ : dossier contenant les fichiers .fastq ou .fastq.gz
+## Ref/sequence.fasta : fichier FASTA du génome de référence
+## results/ : dossier de sortie pour les résultats
+
+## Le script détecte automatiquement :
+## Le type d'entrée (.tar.gz, fichier unique, dossier plat ou multiplex)
+## Et exécute le pipeline complet sans intervention manuelle !
+
+
 ## Auteur 👤
 Fatemeh Kazemi  
 M2 Bioinformatique - Sorbonne Université
