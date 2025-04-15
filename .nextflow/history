@@ -1,0 +1,1 @@
+2025-04-14 15:00:56	19s	nostalgic_noether	OK	9984e9a47283945d3bf826b317eb7315	ebe5a5d9-89c8-4748-b7cc-9a34a6217522	nextflow run src/main.nf --input data_test/hbv --ref_genome Ref/sequence.fasta --result_dir results/

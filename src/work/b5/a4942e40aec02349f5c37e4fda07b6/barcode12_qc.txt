@@ -1,0 +1,3 @@
+QC report for barcode12
+Number of reads: 3224
+Total lines: 12896

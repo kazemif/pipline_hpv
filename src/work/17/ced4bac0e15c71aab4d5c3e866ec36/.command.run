@@ -1,0 +1,284 @@
+#!/bin/bash
+### ---
+### name: 'merge_fastq (3)'
+### outputs:
+### - 'barcode04.merged.fastq.gz'
+### ...
+set -e
+set -u
+NXF_DEBUG=${NXF_DEBUG:=0}; [[ $NXF_DEBUG > 1 ]] && set -x
+NXF_ENTRY=${1:-nxf_main}
+
+
+nxf_sleep() {
+  sleep $1 2>/dev/null || sleep 1;
+}
+
+nxf_date() {
+    local ts=$(date +%s%3N);
+    if [[ ${#ts} == 10 ]]; then echo ${ts}000
+    elif [[ $ts == *%3N ]]; then echo ${ts/\%3N/000}
+    elif [[ $ts == *3N ]]; then echo ${ts/3N/000}
+    elif [[ ${#ts} == 13 ]]; then echo $ts
+    else echo "Unexpected timestamp value: $ts"; exit 1
+    fi
+}
+
+nxf_env() {
+    echo '============= task environment ============='
+    env | sort | sed "s/\(.*\)AWS\(.*\)=\(.\{6\}\).*/\1AWS\2=\3xxxxxxxxxxxxx/"
+    echo '============= task output =================='
+}
+
+nxf_kill() {
+    declare -a children
+    while read P PP;do
+        children[$PP]+=" $P"
+    done < <(ps -e -o pid= -o ppid=)
+
+    kill_all() {
+        [[ $1 != $$ ]] && kill $1 2>/dev/null || true
+        for i in ${children[$1]:=}; do kill_all $i; done
+    }
+
+    kill_all $1
+}
+
+nxf_mktemp() {
+    local base=${1:-/tmp}
+    mkdir -p "$base"
+    if [[ $(uname) = Darwin ]]; then mktemp -d $base/nxf.XXXXXXXXXX
+    else TMPDIR="$base" mktemp -d -t nxf.XXXXXXXXXX
+    fi
+}
+
+nxf_fs_copy() {
+  local source=$1
+  local target=$2
+  local basedir=$(dirname $1)
+  mkdir -p $target/$basedir
+  cp -fRL $source $target/$basedir
+}
+
+nxf_fs_move() {
+  local source=$1
+  local target=$2
+  local basedir=$(dirname $1)
+  mkdir -p $target/$basedir
+  mv -f $source $target/$basedir
+}
+
+nxf_fs_rsync() {
+  rsync -rRl $1 $2
+}
+
+nxf_fs_rclone() {
+  rclone copyto $1 $2/$1
+}
+
+nxf_fs_fcp() {
+  fcp $1 $2/$1
+}
+
+on_exit() {
+    exit_status=${nxf_main_ret:=$?}
+    printf -- $exit_status > /home/etudiant/fatemeh/hbv_pipeline/src/work/17/ced4bac0e15c71aab4d5c3e866ec36/.exitcode
+    set +u
+    exit $exit_status
+}
+
+on_term() {
+    set +e
+    [[ "$pid" ]] && nxf_kill $pid
+}
+
+nxf_launch() {
+    /bin/bash -ue /home/etudiant/fatemeh/hbv_pipeline/src/work/17/ced4bac0e15c71aab4d5c3e866ec36/.command.sh
+}
+
+nxf_stage() {
+    true
+    # stage input files
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_102.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_102.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_48.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_48.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_108.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_108.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_111.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_111.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_117.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_117.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_33.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_33.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_51.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_51.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_42.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_42.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_85.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_85.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_24.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_24.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_15.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_15.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_126.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_126.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_76.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_76.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_130.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_130.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_135.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_135.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_94.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_94.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_121.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_121.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_29.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_29.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_144.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_144.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_61.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_61.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_67.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_67.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_32.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_32.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_84.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_84.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_109.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_109.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_14.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_14.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_127.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_127.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_145.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_145.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_66.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_66.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_43.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_43.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_60.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_60.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_95.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_95.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_25.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_25.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_116.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_116.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_140.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_140.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_131.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_131.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_77.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_77.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_10.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_10.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_134.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_134.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_86.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_86.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_128.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_128.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_28.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_28.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_149.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_149.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_83.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_83.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_53.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_53.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_56.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_56.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_6.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_6.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_47.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_47.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_62.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_62.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_103.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_103.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_106.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_106.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_9.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_9.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_112.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_112.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_147.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_147.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_64.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_64.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_58.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_58.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_150.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_150.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_99.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_99.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_4.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_4.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_70.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_70.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_23.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_23.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_136.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_136.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_101.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_101.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_120.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_120.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_69.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_69.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_119.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_119.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_75.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_75.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_92.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_92.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_34.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_34.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_81.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_81.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_39.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_39.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_40.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_40.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_125.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_125.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_105.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_105.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_54.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_54.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_45.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_45.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_114.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_114.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_36.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_36.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_151.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_151.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_97.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_97.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_142.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_142.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_129.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_129.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_21.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_21.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_123.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_123.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_82.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_82.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_17.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_17.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_30.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_30.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_73.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_73.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_88.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_88.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_12.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_12.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_138.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_138.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_79.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_79.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_91.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_91.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_1.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_1.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_90.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_90.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_96.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_96.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_141.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_141.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_26.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_26.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_115.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_115.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_20.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_20.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_133.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_133.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_78.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_78.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_55.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_55.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_7.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_7.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_18.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_18.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_37.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_37.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_104.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_104.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_139.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_139.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_152.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_152.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_2.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_2.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_122.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_122.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_8.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_8.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_31.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_31.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_89.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_89.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_72.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_72.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_19.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_19.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_13.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_13.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_137.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_137.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_80.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_80.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_71.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_71.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_146.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_146.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_68.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_68.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_65.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_65.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_3.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_3.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_110.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_110.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_74.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_74.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_59.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_59.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_50.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_50.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_100.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_100.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_49.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_49.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_41.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_41.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_44.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_44.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_118.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_118.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_35.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_35.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_38.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_38.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_93.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_93.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_124.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_124.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_52.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_52.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_132.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_132.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_46.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_46.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_87.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_87.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_27.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_27.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_148.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_148.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_107.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_107.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_11.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_11.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_0.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_0.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_113.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_113.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_143.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_143.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_22.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_22.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_63.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_63.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_98.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_98.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_57.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_57.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_16.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_16.fastq.gz
+    ln -s /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv/barcode04/FBA77146_pass_barcode04_ece48912_7da44eff_5.fastq.gz FBA77146_pass_barcode04_ece48912_7da44eff_5.fastq.gz
+}
+
+nxf_unstage() {
+    true
+    [[ ${nxf_main_ret:=0} != 0 ]] && return
+}
+
+nxf_main() {
+    trap on_exit EXIT
+    trap on_term TERM INT USR2
+    trap '' USR1
+
+    [[ "${NXF_CHDIR:-}" ]] && cd "$NXF_CHDIR"
+    NXF_SCRATCH=''
+    [[ $NXF_DEBUG > 0 ]] && nxf_env
+    touch /home/etudiant/fatemeh/hbv_pipeline/src/work/17/ced4bac0e15c71aab4d5c3e866ec36/.command.begin
+    set +u
+    set -u
+    [[ $NXF_SCRATCH ]] && cd $NXF_SCRATCH
+    export NXF_TASK_WORKDIR="$PWD"
+    nxf_stage
+
+    set +e
+    (set -o pipefail; (nxf_launch | tee .command.out) 3>&1 1>&2 2>&3 | tee .command.err) &
+    pid=$!
+    wait $pid || nxf_main_ret=$?
+    nxf_unstage
+}
+
+$NXF_ENTRY

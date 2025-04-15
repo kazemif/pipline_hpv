@@ -1,0 +1,2 @@
+2025-04-14 13:55:03	-	sleepy_cori	-	73ea45202b6064b365836d9e15359b1b	534819a6-1760-4b5c-bed3-0bd3759d00a3	nextflow run main_a.nf
+2025-04-14 14:03:56	20.2s	magical_mandelbrot	OK	73ea45202b6064b365836d9e15359b1b	1a74df27-a8eb-40b3-87f8-f32902de3dc6	nextflow run main_a.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv

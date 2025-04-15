@@ -1,0 +1,221 @@
+This is cutadapt 5.0 with Python 3.10.14
+Command line parameters: -a file:HBV_primer.fasta -m 150 -M 1200 -q 10 -j 4 -o barcode13_trim_reads.fastq.gz barcode13.merged.fastq.gz
+Processing single-end reads on 4 cores ...
+
+=== Summary ===
+
+Total reads processed:                     476
+Reads with adapters:                       127 (26.7%)
+
+== Read fate breakdown ==
+Reads that were too short:                 144 (30.3%)
+Reads that were too long:                  281 (59.0%)
+Reads written (passing filters):            51 (10.7%)
+
+Total basepairs processed:     1,159,066 bp
+Quality-trimmed:                   2,062 bp (0.2%)
+Total written (filtered):         20,894 bp (1.8%)
+
+=== Adapter P1bis ===
+
+Sequence: TTCACCTCTGCCTAATCA; Type: regular 3'; Length: 18; Trimmed: 19 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-18 bp: 1
+
+Bases preceding removed adapters:
+  A: 26.3%
+  C: 10.5%
+  G: 0.0%
+  T: 63.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	7.4	0	2
+4	1	1.9	0	1
+10	1	0.0	1	0 1
+11	1	0.0	1	0 1
+40	1	0.0	1	0 1
+41	1	0.0	1	0 1
+49	1	0.0	1	0 1
+207	1	0.0	1	1
+339	1	0.0	1	1
+376	1	0.0	1	0 1
+389	1	0.0	1	1
+409	1	0.0	1	0 1
+476	1	0.0	1	0 1
+594	1	0.0	1	1
+843	1	0.0	1	0 1
+1764	1	0.0	1	1
+2165	1	0.0	1	1
+3332	1	0.0	1	1
+
+
+=== Adapter P2bis ===
+
+Sequence: AAAAAGTTGCATGGTGCTGG; Type: regular 3'; Length: 20; Trimmed: 61 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Bases preceding removed adapters:
+  A: 4.9%
+  C: 0.0%
+  G: 34.4%
+  T: 3.3%
+  none/other: 57.4%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	3	0.5	0	3
+6	1	0.1	0	1
+11	1	0.0	1	0 1
+12	1	0.0	1	1
+173	1	0.0	2	1
+184	2	0.0	2	0 0 2
+221	1	0.0	2	0 1
+233	2	0.0	2	2
+237	1	0.0	2	1
+240	1	0.0	2	0 1
+251	1	0.0	2	1
+319	1	0.0	2	0 1
+320	1	0.0	2	1
+350	1	0.0	2	0 1
+404	1	0.0	2	1
+442	1	0.0	2	1
+464	1	0.0	2	1
+517	1	0.0	2	1
+522	1	0.0	2	1
+553	1	0.0	2	1
+560	1	0.0	2	1
+678	1	0.0	2	0 1
+694	1	0.0	2	1
+779	1	0.0	2	1
+788	1	0.0	2	1
+823	1	0.0	2	1
+826	1	0.0	2	0 1
+848	1	0.0	2	1
+904	1	0.0	2	1
+953	1	0.0	2	1
+1052	1	0.0	2	1
+1060	1	0.0	2	1
+1093	1	0.0	2	0 0 1
+1341	1	0.0	2	1
+1521	1	0.0	2	1
+1635	1	0.0	2	1
+1662	1	0.0	2	1
+1747	1	0.0	2	1
+1841	1	0.0	2	1
+1855	1	0.0	2	1
+1856	1	0.0	2	0 1
+1906	1	0.0	2	1
+2066	1	0.0	2	1
+2108	1	0.0	2	1
+2195	1	0.0	2	1
+2232	1	0.0	2	1
+2298	1	0.0	2	0 1
+2486	1	0.0	2	1
+2680	1	0.0	2	1
+3096	1	0.0	2	1
+3468	1	0.0	2	1
+3472	1	0.0	2	1
+3518	1	0.0	2	1
+3542	1	0.0	2	1
+4044	1	0.0	2	1
+5540	1	0.0	2	1
+7043	1	0.0	2	1
+
+
+=== Adapter P0303 ===
+
+Sequence: GCCTCCAAGCTGTGCCTT; Type: regular 3'; Length: 18; Trimmed: 17 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-18 bp: 1
+
+Bases preceding removed adapters:
+  A: 88.2%
+  C: 0.0%
+  G: 11.8%
+  T: 0.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	7.4	0	2
+19	2	0.0	1	2
+61	1	0.0	1	1
+147	1	0.0	1	1
+179	1	0.0	1	0 1
+183	1	0.0	1	1
+305	1	0.0	1	1
+352	1	0.0	1	1
+357	1	0.0	1	1
+657	1	0.0	1	1
+906	1	0.0	1	1
+1639	1	0.0	1	1
+3083	1	0.0	1	1
+3130	1	0.0	1	1
+3131	1	0.0	1	1
+
+
+=== Adapter P1103 ===
+
+Sequence: GCCTACAGCCTCCTARTACAA; Type: regular 3'; Length: 21; Trimmed: 30 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 0.0%
+  C: 0.0%
+  G: 0.0%
+  T: 100.0%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'T' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+72	1	0.0	2	1
+74	1	0.0	2	1
+154	1	0.0	2	1
+167	1	0.0	2	1
+236	1	0.0	2	1
+348	1	0.0	2	1
+477	1	0.0	2	1
+480	1	0.0	2	1
+514	1	0.0	2	1
+540	1	0.0	2	1
+627	1	0.0	2	1
+655	1	0.0	2	0 1
+900	1	0.0	2	1
+973	1	0.0	2	1
+1021	1	0.0	2	0 1
+1128	1	0.0	2	1
+1631	1	0.0	2	1
+1904	1	0.0	2	1
+2297	1	0.0	2	1
+2713	1	0.0	2	1
+2980	1	0.0	2	1
+3113	1	0.0	2	1
+3182	1	0.0	2	1
+3214	1	0.0	2	1
+3375	1	0.0	2	1
+3664	1	0.0	2	1
+4084	1	0.0	2	1
+4254	1	0.0	2	1
+6278	1	0.0	2	1
+7194	1	0.0	2	1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.

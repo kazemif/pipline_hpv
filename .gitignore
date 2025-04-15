@@ -1,0 +1,9 @@
+results/
+data_test/
+*.fastq
+*.fastq.gz
+*.bam
+*.vcf
+*.html
+__pycache__/
+data_test/

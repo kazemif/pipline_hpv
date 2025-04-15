@@ -1,0 +1,3 @@
+QC report for barcode14
+Number of reads: 237
+Total lines: 948
