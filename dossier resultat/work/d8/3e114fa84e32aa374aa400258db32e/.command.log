@@ -1,0 +1,21 @@
+
+
+processing file: rapport_final.Rmd
+1/23                   
+2/23 [setup]           
+Error in `FUN()`:
+! object 'GC_content' not found
+Backtrace:
+  1. global generate_all_qc_plots(base_dir, barcodes)
+  3. plotly:::ggplotly.ggplot(p, tooltip = "colour")
+  4. plotly::gg2list(...)
+  5. plotly (local) ggplotly_build(p)
+  6. plotly (local) by_layer(function(l, d) l$compute_aesthetics(d, plot))
+  7. plotly (local) f(l = layers[[i]], d = data[[i]])
+  8. l$compute_aesthetics(d, plot)
+  9. ggplot2 (local) compute_aesthetics(..., self = self)
+ 10. base::lapply(aesthetics, eval_tidy, data = data, env = env)
+ 11. rlang (local) FUN(X[[i]], ...)
+
+Quitting from lines 7-20 [setup] (rapport_final.Rmd)
+Execution halted

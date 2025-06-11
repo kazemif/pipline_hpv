@@ -1,0 +1,18 @@
+🔍 Traitement de : barcode10
+2025-05-06 11:56:31 Defining chunks
+2025-05-06 11:56:31 Process will use 1 CPU and deal arround 5025 reads/CPU
+2025-05-06 11:56:31 Performing parallel processing
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP Tue Nov 5 00:21:55 UTC 2024
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 6.84 Mo
+2025-05-06 11:57:40 Combining chunk results
+2025-05-06 11:57:40 Summarizing chunk results
+2025-05-06 11:57:40 Writting results
+2025-05-06 11:57:40 Running time: 0h:1m:9s::13
+📁 Fichiers générés :
+total 72K
+-rw-r--r-- 1 etudiant etudiant  19K May  6 11:57 barcode10_GC_content.txt
+-rw-r--r-- 1 etudiant etudiant  22K May  6 11:57 barcode10_per_base_seq_score.txt
+-rw-r--r-- 1 etudiant etudiant 6.1K May  6 11:57 barcode10_read_length.txt
+-rw-r--r-- 1 etudiant etudiant  18K May  6 11:57 barcode10_seq_score.txt

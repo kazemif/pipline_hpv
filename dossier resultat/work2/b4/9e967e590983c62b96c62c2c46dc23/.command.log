@@ -1,0 +1,18 @@
+🔍 Traitement de : barcode09
+2025-06-11 10:57:58 Defining chunks
+2025-06-11 10:57:58 Process will use 1 CPU and deal arround 43937 reads/CPU
+2025-06-11 10:57:58 Performing parallel processing
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP PREEMPT_DYNAMIC Mon Apr 21 17:08:54 UTC 2025
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 42.44 Mo
+2025-06-11 11:02:44 Combining chunk results
+2025-06-11 11:02:44 Summarizing chunk results
+2025-06-11 11:02:44 Writting results
+2025-06-11 11:02:44 Running time: 0h:4m:46s::60
+📁 Fichiers générés :
+total 80K
+-rw-r--r-- 1 etudiant etudiant  15K Jun 11 11:02 barcode09_GC_content.txt
+-rw-r--r-- 1 etudiant etudiant  21K Jun 11 11:02 barcode09_per_base_seq_score.txt
+-rw-r--r-- 1 etudiant etudiant 4.7K Jun 11 11:02 barcode09_read_length.txt
+-rw-r--r-- 1 etudiant etudiant  29K Jun 11 11:02 barcode09_seq_score.txt

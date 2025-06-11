@@ -1,0 +1,17 @@
+2025-05-05 13:25:44 Sorting BAM file
+2025-05-05 13:25:44 Indexing BAM file
+2025-05-05 13:25:44 Building reads pileup
+2025-05-05 13:25:44 Sorting VCF file
+2025-05-05 13:25:44 Building pileup array
+Traceback (most recent call last):
+  File "/home/etudiant/fatemeh/stage_fatemeh_2025/tools/Python/parse_variant/src/parse_variant/main.py", line 120, in <module>
+    main()
+  File "/home/etudiant/fatemeh/stage_fatemeh_2025/tools/Python/parse_variant/src/parse_variant/main.py", line 93, in main
+    pileup_array = parse_variant.parse_vcf.filter_vcf(vcf_path = "_tempo_.vcf",
+  File "/home/etudiant/conda_config/miniconda3/envs/hbv_pipeline/lib/python3.10/site-packages/parse_variant/parse_vcf.py", line 75, in filter_vcf
+    vcf_reader = vcf.Reader(in_vcf)
+  File "/home/etudiant/conda_config/miniconda3/envs/hbv_pipeline/lib/python3.10/site-packages/vcf/parser.py", line 300, in __init__
+    self._parse_metainfo()
+  File "/home/etudiant/conda_config/miniconda3/envs/hbv_pipeline/lib/python3.10/site-packages/vcf/parser.py", line 317, in _parse_metainfo
+    line = next(self.reader)
+StopIteration

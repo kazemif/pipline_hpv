@@ -1,0 +1,11 @@
+🔍 Traitement de : barcode03
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP Tue Nov 5 00:21:55 UTC 2024
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 4.93 Mo
+📁 Fichiers générés :
+total 68K
+-rw-r--r-- 1 etudiant etudiant  16K Apr 28 15:02 barcode03_GC_content.txt
+-rw-r--r-- 1 etudiant etudiant  22K Apr 28 15:02 barcode03_per_base_seq_score.txt
+-rw-r--r-- 1 etudiant etudiant 4.9K Apr 28 15:02 barcode03_read_length.txt
+-rw-r--r-- 1 etudiant etudiant  18K Apr 28 15:02 barcode03_seq_score.txt

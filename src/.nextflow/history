@@ -1,2 +1,261 @@
 2025-04-14 13:55:03	-	sleepy_cori	-	73ea45202b6064b365836d9e15359b1b	534819a6-1760-4b5c-bed3-0bd3759d00a3	nextflow run main_a.nf
 2025-04-14 14:03:56	20.2s	magical_mandelbrot	OK	73ea45202b6064b365836d9e15359b1b	1a74df27-a8eb-40b3-87f8-f32902de3dc6	nextflow run main_a.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-23 13:42:49	-	marvelous_jones	-	aa8e2a5a130b4b621dacca0c5260b634	d7c896c3-f011-40f9-908f-1028f0212365	nextflow run main.nf --input data_test/hbv --ref_genome Ref/sequence.fasta --result_dir results/
+2025-04-23 13:43:59	-	goofy_easley	-	a437fc3b3a3a3bfad14e7078c3d26801	8b64e315-3082-4733-849a-d47970cc2abc	nextflow run main.nf --input data_test/hbv --ref_genome Ref/sequence.fasta --result_dir results/
+2025-04-23 13:44:39	-	hungry_pare	-	c9f835e49903a3b336ad839c5941e38b	21d397ed-803b-44e6-9c0e-a36ee2ce3444	nextflow run main.nf --input data_test/hbv --ref_genome Ref/sequence.fasta --result_dir results/
+2025-04-23 13:45:31	6.2s	romantic_bhabha	ERR	c9f835e49903a3b336ad839c5941e38b	edc531d7-8b66-4d25-bd80-af0945892d7c	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-23 14:00:16	19.9s	shrivelled_wing	OK	ddf5e6281981e543c19c90e602778e5a	090f134c-f7f2-46ad-b410-63eab58490d1	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:17:46	-	cranky_curry	-	ddf5e6281981e543c19c90e602778e5a	9f0653fa-ddd2-4824-9bca-0998fdd77121	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:28:38	11.5s	ridiculous_yalow	ERR	ddf5e6281981e543c19c90e602778e5a	8dc60e2e-763b-4895-9902-d2f81e06acf7	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:35:21	8.9s	fervent_kalam	ERR	ddf5e6281981e543c19c90e602778e5a	493ccfb7-8191-4fdf-bb4d-dcd0f2c55530	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:42:02	4s	small_golick	ERR	ddf5e6281981e543c19c90e602778e5a	5799e749-dad3-436e-b9af-6f92d8a5b371	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:45:25	4.2s	big_bartik	ERR	ddf5e6281981e543c19c90e602778e5a	ac079ac8-fd89-45b4-9189-7641b0827204	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:46:30	-	desperate_engelbart	-	ddf5e6281981e543c19c90e602778e5a	322ff056-688d-4283-a356-a7e5bb40f70f	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:47:31	3.5s	prickly_boltzmann	ERR	ddf5e6281981e543c19c90e602778e5a	face45f1-52d3-41f3-89c8-fb311c739db8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 15:50:29	7.7s	maniac_borg	ERR	ddf5e6281981e543c19c90e602778e5a	eb75e86a-e020-4c4e-94c5-5b418bba8645	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 16:41:24	10.1s	compassionate_legentil	ERR	ddf5e6281981e543c19c90e602778e5a	289e46d6-a799-4c50-a104-abbb72ecd1af	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-24 16:54:35	9.6s	prickly_wescoff	ERR	ddf5e6281981e543c19c90e602778e5a	b098d680-049c-4bbf-8ea6-778a1f4e8fd4	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:01:05	-	cranky_meucci	-	57075eb16dffc480c562160e3b5e8ac5	a5b4e13b-aa27-474c-a480-d36f50c11366	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:05:03	-	grave_dubinsky	-	ff70594c0397c2d6533c424cd447ae4f	2007ce8e-c279-4680-9ccc-7f72a67d0695	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:06:42	7.2s	adoring_gilbert	ERR	10420db619386248e48ff5df9dfb3385	54478b56-4e5d-4926-9c7b-5125329001bc	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:20:12	7.2s	mighty_pare	ERR	10420db619386248e48ff5df9dfb3385	f53bdc2f-50b9-4dcb-9a4a-2ee96a78fc94	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:31:07	7s	admiring_kowalevski	ERR	10420db619386248e48ff5df9dfb3385	82c2277c-8be9-4f78-bfa8-fb8889fb6b71	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:33:43	8.4s	condescending_hawking	ERR	10420db619386248e48ff5df9dfb3385	07b0a9a6-b9a2-48b9-a939-1d2a76e7a039	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:37:23	8.3s	thirsty_rosalind	ERR	10420db619386248e48ff5df9dfb3385	1bcbde90-c5e8-4555-8090-d83b922fef11	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 11:47:34	8.3s	ridiculous_edison	ERR	10420db619386248e48ff5df9dfb3385	28c82e14-d413-4196-bd01-d21395899aa6	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 12:13:40	9s	modest_shockley	ERR	10420db619386248e48ff5df9dfb3385	3d094ed9-bb86-4b4a-94f3-afd578836de2	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 12:37:25	8.4s	mad_euler	ERR	10420db619386248e48ff5df9dfb3385	e05f1edd-f46f-44af-970c-79c02625fc37	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 12:40:13	-	goofy_mayer	-	d3c98ead13eadff160449af42ba59ee9	53d1750e-3f98-48e0-8576-f87932c70efd	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 12:41:11	8.4s	compassionate_hamilton	ERR	0b7432843d4cefaa46fd1dbf394b3acc	713a5215-6686-414b-88f6-d175bcf00e54	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 12:55:25	8.9s	loving_plateau	ERR	0b7432843d4cefaa46fd1dbf394b3acc	4da3ba2c-c57c-4785-b2e5-fbd3447406a2	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:06:35	8.9s	exotic_perlman	ERR	0b7432843d4cefaa46fd1dbf394b3acc	23511e53-966b-4559-952c-1cb7d7ffcda3	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:08:34	4.2s	focused_leavitt	ERR	0b7432843d4cefaa46fd1dbf394b3acc	6f2aa000-d339-4cc2-8564-c2613166a89c	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:10:35	-	hopeful_kowalevski	-	0b7432843d4cefaa46fd1dbf394b3acc	81148be1-9f54-4883-b35b-5d9d6b5cc13f	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:11:13	-	golden_roentgen	-	0b7432843d4cefaa46fd1dbf394b3acc	4bf5b091-d282-44dc-b855-1b9f84825b85	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:11:35	7.5s	fervent_jang	ERR	0b7432843d4cefaa46fd1dbf394b3acc	62fbc8b9-1700-43ae-b934-434e179bca6f	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:15:14	8.9s	serene_mirzakhani	ERR	0b7432843d4cefaa46fd1dbf394b3acc	f8f7a599-a0c9-49f6-9f9d-5de7ce5e67ed	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:18:05	-	condescending_northcutt	-	cca35f0391252d0bafaf557f54bb289c	98995ee6-46fd-4f53-acbf-1188f3b29617	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:24:10	6.6s	amazing_woese	ERR	89f0320fb6c4818fdb75ef0eda5e7f2d	b4249153-656b-4200-8974-3fd0a39e07ba	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:27:12	8.5s	tender_church	ERR	89f0320fb6c4818fdb75ef0eda5e7f2d	a9d16a49-30a5-4171-ad5f-990e2cbc75d6	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:31:03	4m 31s	romantic_pasteur	OK	89f0320fb6c4818fdb75ef0eda5e7f2d	cfb0a2d2-ad70-43b0-9975-94c50a069eb4	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:44:39	-	tender_bose	-	89f0320fb6c4818fdb75ef0eda5e7f2d	8b474cd6-c6d3-438a-9e40-8ed857c36ad5	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:45:38	-	prickly_mercator	-	89f0320fb6c4818fdb75ef0eda5e7f2d	dc82734c-46d5-4a66-9c45-b7f001856b28	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:47:11	-	cheeky_kimura	-	89f0320fb6c4818fdb75ef0eda5e7f2d	f9da4ea9-0a56-4bda-af17-a475f5dfdbb4	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:48:30	-	exotic_wing	-	89f0320fb6c4818fdb75ef0eda5e7f2d	969f5952-b653-4bdb-a16b-ddf443559e6f	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:50:08	-	prickly_fermat	-	89f0320fb6c4818fdb75ef0eda5e7f2d	122d8072-4e47-427a-a6d9-e5750758a356	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:51:12	-	irreverent_kowalevski	-	89f0320fb6c4818fdb75ef0eda5e7f2d	90477311-4f83-4456-8e6a-5dac93c9bfa7	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:52:03	-	maniac_hawking	-	89f0320fb6c4818fdb75ef0eda5e7f2d	eb835042-fef6-4f70-937d-19b0fdef8bb0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:56:56	8.8s	clever_morse	ERR	89f0320fb6c4818fdb75ef0eda5e7f2d	62616720-87ec-4830-8a7d-526d0b20590e	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 13:59:54	7.9s	distracted_thompson	ERR	89f0320fb6c4818fdb75ef0eda5e7f2d	07ca69b8-06da-42eb-8373-0aba050891c6	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 14:17:43	4m 25s	disturbed_leakey	OK	89f0320fb6c4818fdb75ef0eda5e7f2d	aa8ccfc1-0ee0-47a5-996b-82747f991e6b	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 14:34:03	9.1s	cheesy_stallman	ERR	89f0320fb6c4818fdb75ef0eda5e7f2d	46251d45-ed72-4642-8dc2-c513c8e3109f	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 14:37:17	-	determined_liskov	-	89f0320fb6c4818fdb75ef0eda5e7f2d	722d2271-eba0-44b4-b0d6-018fb0d95693	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 14:39:00	1m 51s	irreverent_lorenz	ERR	89f0320fb6c4818fdb75ef0eda5e7f2d	22f64f0b-93d9-4d71-81ee-00dc3696c13e	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 14:51:05	2.3s	maniac_torricelli	ERR	703dba5dcd01f779b8f4deee4c7fd442	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-25 14:51:14	4m 24s	fabulous_gilbert	OK	703dba5dcd01f779b8f4deee4c7fd442	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 11:29:45	-	chaotic_fermat	-	1176be4cebdf5bc55bed4fc6635fb173	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 11:34:13	2.6s	chaotic_ekeblad	ERR	1176be4cebdf5bc55bed4fc6635fb173	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 13:10:39	2.1s	serene_lumiere	ERR	1176be4cebdf5bc55bed4fc6635fb173	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 14:02:40	2.2s	lethal_curran	ERR	1176be4cebdf5bc55bed4fc6635fb173	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 14:15:02	4.5s	scruffy_yonath	ERR	1176be4cebdf5bc55bed4fc6635fb173	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 14:16:08	2.9s	desperate_pauling	ERR	1176be4cebdf5bc55bed4fc6635fb173	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 14:32:05	4.5s	sleepy_monod	ERR	29eec8ecbea7cc5a32df77fd2c021808	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 14:44:48	-	insane_minsky	-	29eec8ecbea7cc5a32df77fd2c021808	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 14:46:48	3m 10s	dreamy_shockley	OK	29eec8ecbea7cc5a32df77fd2c021808	4be06646-d766-413a-ab33-29125ed14bc0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 15:01:04	5m 52s	hopeful_wilson	OK	29eec8ecbea7cc5a32df77fd2c021808	8d01b076-45e8-49aa-a08a-9ec5f1cc7cdf	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-28 15:12:45	2.5s	naughty_ritchie	OK	29eec8ecbea7cc5a32df77fd2c021808	8d01b076-45e8-49aa-a08a-9ec5f1cc7cdf	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 15:15:54	3m 6s	dreamy_mcnulty	OK	29eec8ecbea7cc5a32df77fd2c021808	8d01b076-45e8-49aa-a08a-9ec5f1cc7cdf	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 15:22:00	3m 15s	soggy_goldwasser	OK	29eec8ecbea7cc5a32df77fd2c021808	8d01b076-45e8-49aa-a08a-9ec5f1cc7cdf	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-28 15:38:23	5m 46s	gloomy_kimura	OK	29eec8ecbea7cc5a32df77fd2c021808	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-28 15:50:32	3m 9s	serene_sax	OK	29eec8ecbea7cc5a32df77fd2c021808	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 10:40:59	3m 10s	peaceful_euler	OK	29eec8ecbea7cc5a32df77fd2c021808	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 11:11:06	2.8s	grave_meninsky	ERR	29eec8ecbea7cc5a32df77fd2c021808	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 11:12:30	2.6s	jovial_yonath	ERR	2dbf124f3513e97317f5e542d01af871	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 11:19:47	3s	friendly_goodall	OK	2dbf124f3513e97317f5e542d01af871	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 11:23:32	4.6s	fabulous_hopper	OK	2dbf124f3513e97317f5e542d01af871	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 13:12:46	4.8s	determined_bhaskara	OK	2dbf124f3513e97317f5e542d01af871	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 13:22:06	2.7s	evil_joliot	OK	29eec8ecbea7cc5a32df77fd2c021808	ef82e00b-b6ff-4860-9496-bdee687eba00	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 13:34:06	4m 29s	clever_booth	OK	29eec8ecbea7cc5a32df77fd2c021808	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-04-30 13:40:38	2.7s	goofy_cajal	OK	29eec8ecbea7cc5a32df77fd2c021808	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 13:43:38	-	magical_stallman	-	29eec8ecbea7cc5a32df77fd2c021808	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 13:56:13	-	astonishing_shirley	-	4a0b47b493ecc5b6a0b1295c0140d8a3	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:00:33	3m 18s	nauseous_watson	OK	3772f8141c808134bae05aafb088bd72	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:10:21	5.2s	nauseous_thompson	ERR	3772f8141c808134bae05aafb088bd72	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:13:24	3m 10s	mighty_ardinghelli	OK	3772f8141c808134bae05aafb088bd72	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:32:32	3m 6s	suspicious_lavoisier	OK	3772f8141c808134bae05aafb088bd72	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:44:10	3m 9s	drunk_goodall	OK	3772f8141c808134bae05aafb088bd72	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:54:21	-	desperate_kalam	-	aaf9bc32e66e76ce1831a0baa82b2fcc	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:54:46	-	cranky_noyce	-	3112c3a43a2b785c340f6668c00e7ccf	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:55:51	2.1s	berserk_nobel	OK	df33d08a2f00a1af4b2e4602d343136b	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:56:50	-	gloomy_kay	-	d471637f458ac6a835b2db9b168367a3	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 14:57:31	2.7s	adoring_dalembert	OK	1f4e082b0a6b3f741874e49f1a1412e6	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:08:48	2.2s	nostalgic_spence	OK	27f40084c14f87434c1de02e39c4a5b2	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:13:01	2.5s	berserk_shaw	OK	e4041158c17c111e74e6bf2cd579e9c3	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:14:13	2.9s	disturbed_pesquet	ERR	a2b56ec03207aba11c5ba88a8683de19	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:19:36	2.3s	intergalactic_faggin	ERR	389ab8af28e624d7639b4344cb6fb732	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:23:34	2.7s	prickly_mcclintock	OK	1c3a71275b2f9ae4571704fcd96beedb	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:23:59	2.3s	magical_bhabha	ERR	69833e8663861fc895542eed20791264	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:26:48	3.4s	desperate_wescoff	OK	569500059d586da516c55a71cb2f220a	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:27:09	2.7s	confident_aryabhata	OK	569500059d586da516c55a71cb2f220a	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:27:55	2.8s	fabulous_solvay	OK	17f2e0bee69e61eb72478a713410df67	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:28:27	2.2s	trusting_coulomb	OK	f16ac3ebe5cf2aa866f8fb398d7547a9	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:29:49	2.3s	tender_legentil	OK	dca1b585134772e4fd7def0986e0286a	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:33:33	2.6s	disturbed_volta	ERR	3e1cb7415dd5cb0ae917d3ed7eae98f1	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:34:36	2s	jolly_bose	ERR	167e92563bca3e6a41e8a09da20f94aa	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:36:43	-	irreverent_spence	-	cac9f1f746699826ccad14669c16ad9b	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:45:26	2.6s	spontaneous_rutherford	ERR	cac9f1f746699826ccad14669c16ad9b	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:45:48	-	chaotic_pauling	-	cac9f1f746699826ccad14669c16ad9b	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:47:26	-	stupefied_curry	-	828933df03cc71256672d3f112e30b88	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:48:29	-	pedantic_wiles	-	285070f1a4ece2eb6a5b54a95fa4c0dd	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:53:11	3.4s	infallible_morse	OK	f3bb1b8e9a32d8430de8eb3d1d4ac02b	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:53:57	2.7s	spontaneous_maxwell	ERR	8602cdeec98bc6f156972ef8033414a7	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:54:43	-	distraught_aryabhata	-	7cd512e4d5e015339dc84eaa8e667258	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-04-30 15:55:02	2.8s	focused_coulomb	OK	8c6c090ec1c5f2eaf0d25cee521923f0	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 09:15:06	2.9s	loving_wiles	OK	8c6c090ec1c5f2eaf0d25cee521923f0	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 09:16:19	1.8s	nasty_maxwell	OK	8c6c090ec1c5f2eaf0d25cee521923f0	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 09:21:09	2.1s	loquacious_almeida	ERR	8602cdeec98bc6f156972ef8033414a7	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 09:21:20	2.4s	irreverent_moriondo	ERR	8602cdeec98bc6f156972ef8033414a7	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 09:25:33	2s	maniac_mccarthy	ERR	8602cdeec98bc6f156972ef8033414a7	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 09:25:46	2.8s	gloomy_fourier	ERR	8602cdeec98bc6f156972ef8033414a7	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 10:34:35	2.4s	backstabbing_cantor	OK	c7c2a25bb2b0d38234b1a08bd1d608ca	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 10:40:40	2.5s	suspicious_engelbart	OK	e2987d4ebd618e4661631625949ac9e0	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 13:47:46	2.5s	pedantic_sammet	ERR	81eac5ea2342a1c1d50c28eb19f63c1c	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 13:50:26	2s	reverent_lavoisier	ERR	c031c648bee2d9d93586b4ef31ffef9c	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 13:50:38	2s	furious_galileo	ERR	c031c648bee2d9d93586b4ef31ffef9c	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 13:53:26	2.7s	lethal_curry	ERR	98d885b58520a42197a1f44947c8c9a3	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 13:53:52	2.5s	backstabbing_escher	ERR	98d885b58520a42197a1f44947c8c9a3	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 13:57:39	5.6s	soggy_hopper	ERR	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:01:58	3.3s	intergalactic_kare	ERR	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:06:45	-	amazing_hopper	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:07:57	2.8s	loquacious_edison	ERR	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:09:35	-	intergalactic_descartes	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:11:37	-	distraught_wiles	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:12:50	-	intergalactic_rosalind	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:13:28	-	chaotic_northcutt	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:15:32	-	loquacious_gutenberg	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:19:29	-	elegant_carlsson	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:20:30	-	pedantic_ramanujan	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:23:21	-	pensive_jennings	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:26:16	-	gigantic_venter	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:27:47	-	suspicious_panini	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-02 14:29:15	-	serene_hilbert	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 10:35:53	-	stupefied_ekeblad	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 10:40:39	-	reverent_kare	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 10:44:30	-	thirsty_cantor	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 10:47:41	-	agitated_darwin	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 10:54:57	-	silly_kalam	-	f642083f2ea1d32e4cd3db07896d9199	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 10:59:26	-	amazing_hamilton	-	51d119b5fc013428c6422981075130be	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 11:00:33	-	grave_pauling	-	26f4c0f988c7fa10eada316550316cd7	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 11:01:41	-	kickass_hodgkin	-	15876d9b506c034910ce392f092e9b90	60147de5-32a4-4f97-8ffd-d4f4e4df2aa8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 11:02:40	5m 50s	furious_curie	OK	30d5a4f7b3a94975f55c1ca336955316	7b3554a0-b93b-48ce-b2ca-8a55a709d74c	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-05 11:11:15	-	tiny_rutherford	-	fb6907361704be23ad53964f50f6b78c	84744d71-f147-4784-8a7e-608765691795	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-05 11:29:33	5m 52s	desperate_ekeblad	OK	2c52c1aa4b34e9cb6504567d2f610387	587687c8-02b3-4817-b813-bb64c4c11186	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-05 12:49:36	-	insane_blackwell	-	a1841aa3ab74d3dffc4f7a4d03bd24fe	a7ec3b03-34f7-4250-8542-107c28c5ea2a	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-05 12:51:18	1m 24s	backstabbing_kare	ERR	9aded9ca09a6613496788b5f4ce73eda	523914f5-824d-48c5-b255-32f9d1df4314	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-05 13:22:42	35.6s	stoic_monod	ERR	7d0f3d037fafa5b80565a0c348f9e349	4048acb6-096f-4bb6-9d4a-81253fd6fa04	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-05 13:23:52	1m 53s	silly_lamarr	ERR	7d0f3d037fafa5b80565a0c348f9e349	4048acb6-096f-4bb6-9d4a-81253fd6fa04	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 13:31:59	5m 1s	distracted_ekeblad	OK	7d0f3d037fafa5b80565a0c348f9e349	4048acb6-096f-4bb6-9d4a-81253fd6fa04	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:01:58	3m 21s	sad_ptolemy	OK	7d0f3d037fafa5b80565a0c348f9e349	4048acb6-096f-4bb6-9d4a-81253fd6fa04	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:07:50	3m 24s	marvelous_khorana	OK	7d0f3d037fafa5b80565a0c348f9e349	4048acb6-096f-4bb6-9d4a-81253fd6fa04	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:15:41	3m 22s	mighty_varahamihira	OK	7d0f3d037fafa5b80565a0c348f9e349	4048acb6-096f-4bb6-9d4a-81253fd6fa04	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:19:21	6m 5s	ecstatic_pasteur	OK	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-05 15:27:31	3m 20s	suspicious_golick	OK	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:33:45	3m 22s	boring_joliot	OK	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:43:48	3m 20s	special_lichterman	OK	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:47:27	37.7s	sick_moriondo	ERR	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:49:22	3.2s	curious_linnaeus	ERR	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-05 15:50:04	3m 13s	nice_elion	OK	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 10:03:46	3m 32s	cranky_sammet	OK	7d0f3d037fafa5b80565a0c348f9e349	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 11:21:39	3m 22s	nostalgic_mayer	OK	cd347ffc3895f1958874b7f2304c26bb	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 11:30:35	3m 19s	nice_avogadro	OK	67c3962c485b35a72475cf4b9c9c66eb	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 11:42:18	3m 32s	high_lalande	OK	d057f0dbfe885b83120e52b4ccc9d56f	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 11:46:17	3m 23s	suspicious_wescoff	OK	22f4e5597da3a0eaef891dbeb0dab459	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 11:52:34	3m 25s	peaceful_curie	OK	b2f880bdf2f04a3ac6714d85d3b86d19	a076e0ea-daaf-4aed-8f8a-10119e72e447	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 11:56:15	6m 1s	elegant_banach	OK	90dc4d98215ea263ed91143fbffc988e	7eab06c3-9066-4543-be05-7e677478a26b	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-06 12:05:54	6m 14s	fervent_shannon	OK	17ca5e72358e69fd40c5699a1d429921	dffdbeba-9fc8-48d3-ba5c-5724b93dbe39	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-06 12:16:05	3m 26s	spontaneous_jones	OK	01249194bd300b48e749f7fd25c9d309	dffdbeba-9fc8-48d3-ba5c-5724b93dbe39	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 12:20:13	2m 36s	voluminous_banach	ERR	e67c34d7c6931933bf927b6a1313d7ce	39b85041-4650-4147-9cc9-e0ccbbc64ec7	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-06 12:23:04	1m 12s	loquacious_wilson	ERR	bddcbdd338ab12f81712db26c954e44b	39b85041-4650-4147-9cc9-e0ccbbc64ec7	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-06 12:25:20	6m 13s	kickass_wescoff	OK	bddcbdd338ab12f81712db26c954e44b	62ad6635-0cee-4c2d-8571-b2b63e491d72	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-07 11:15:56	5m 30s	crazy_kimura	OK	bddcbdd338ab12f81712db26c954e44b	62ad6635-0cee-4c2d-8571-b2b63e491d72	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-07 11:55:04	5m 45s	dreamy_cori	OK	bddcbdd338ab12f81712db26c954e44b	62ad6635-0cee-4c2d-8571-b2b63e491d72	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-07 15:44:36	3m 27s	desperate_keller	OK	bddcbdd338ab12f81712db26c954e44b	62ad6635-0cee-4c2d-8571-b2b63e491d72	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-19 11:46:02	1m 27s	pensive_gates	ERR	bddcbdd338ab12f81712db26c954e44b	4c50031f-993b-417f-8f2b-246404d00045	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-19 11:52:38	1m 10s	insane_poitras	ERR	bddcbdd338ab12f81712db26c954e44b	9d608dc7-8d43-4931-a3d1-5e0cfa94cb70	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-19 12:02:49	6m 11s	elegant_dijkstra	OK	5a67ed23f57864055b0c83d47ffe9c2e	1a9a7992-38ff-4c97-bd58-76acb1ded137	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-19 12:29:56	6m 2s	big_engelbart	OK	5a67ed23f57864055b0c83d47ffe9c2e	2d20c040-aa5a-42f9-b941-ee946a52c8a6	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-05-19 12:45:11	3m 28s	lethal_hypatia	OK	3815d4f8615783e2d039e5ba956a01a7	2d20c040-aa5a-42f9-b941-ee946a52c8a6	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-19 14:18:18	3m 19s	trusting_lamarck	OK	3815d4f8615783e2d039e5ba956a01a7	2d20c040-aa5a-42f9-b941-ee946a52c8a6	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-19 14:38:08	3m 30s	clever_ride	OK	3815d4f8615783e2d039e5ba956a01a7	2d20c040-aa5a-42f9-b941-ee946a52c8a6	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv -resume
+2025-05-28 14:48:13	-	lethal_poisson	-	bf29bad9f9b7f7b4a7b828ad11d163d3	99467f1f-c2af-4d72-87ce-91f2c98638df	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir results
+2025-05-28 15:06:36	-	curious_rutherford	-	de7e6570589be41637692635a3680c2f	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results
+2025-05-28 15:09:55	12.2s	gloomy_bartik	ERR	5161ba3190b4dfdcde21325ff3a69f42	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-05-28 15:32:51	-	silly_ramanujan	-	fd8ff1071cd21cf41b669d58f6ed0e47	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-05-28 15:40:31	4.5s	condescending_planck	ERR	150d551d571837e9d442006dfc53dc92	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-05-28 15:43:22	6.3s	grave_hodgkin	ERR	6bfc7be875b512a93fa299ad2aa2f758	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-05-28 15:46:43	6s	boring_yalow	ERR	1e16a956670e2438f619d244fd5376fb	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-05-28 15:48:59	3.2s	big_bardeen	ERR	6411af86e8a92888737eb4131d5ce638	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-05-28 15:50:39	5.3s	nostalgic_church	ERR	e9c9cdebee7952ceeb732479a1032c6e	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-05-28 15:55:28	6.3s	jovial_lichterman	ERR	eb16d2e6c18574df69a283777468b9e0	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-06-02 10:09:13	7.6s	dreamy_stallman	ERR	eb16d2e6c18574df69a283777468b9e0	bc339da1-e30c-4d20-84e7-a5496a5888a8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv --result_dir ../results -resume
+2025-06-02 10:51:43	12s	marvelous_kirch	ERR	eb16d2e6c18574df69a283777468b9e0	677bd6d9-0d1e-40e6-b380-cd6ebe33d364	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 11:17:45	9.9s	loving_lichterman	ERR	eb16d2e6c18574df69a283777468b9e0	ce1f55fc-9406-4078-963c-ca87c3e839df	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 12:49:37	12.8s	infallible_avogadro	ERR	eb16d2e6c18574df69a283777468b9e0	83627d25-6e90-4e3f-8bab-90196a3bb1a0	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:23:51	-	jovial_fourier	-	f5986858fa1ce8e850aade4b2be830a4	1e246cd4-1b9c-4c40-9cef-616c0f9be4be	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:25:14	-	festering_mcclintock	-	f5986858fa1ce8e850aade4b2be830a4	a99363a4-9816-463e-bd22-37b5db7e8553	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:26:31	12.5s	berserk_swanson	ERR	eb16d2e6c18574df69a283777468b9e0	1ad68c3c-b28a-4380-83fc-d36e83cd0b4e	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:33:26	-	hopeful_liskov	-	c65cb4115a8d0a15d8a5bfbec05804f0	e2341a4e-a495-4e91-8a01-6c85e0be9974	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:35:50	2.4s	nice_cantor	ERR	c217cb2c44dc5c6e3d8ce4bb68082410	fa3e0677-93d3-495c-8d95-ad54744adae4	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:37:09	2.7s	cheesy_borg	ERR	c217cb2c44dc5c6e3d8ce4bb68082410	547ce216-5e4d-4029-8e04-2c6ab54ed55a	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:38:29	51.4s	big_cuvier	ERR	f2ce203f0a9411ddddf7d7b4ff662e0d	bff32139-64b1-465f-8d9c-3cad1e99ac46	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:39:46	11.5s	condescending_franklin	ERR	5280a6729df14ac55b72ae7a3b1c23c2	b968c5ad-3a9e-4ebb-bcf2-1399ebfd06f4	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 13:44:18	12.2s	fabulous_laplace	ERR	5280a6729df14ac55b72ae7a3b1c23c2	197835cf-05e8-4f9f-8f6d-3739725ed188	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 14:03:05	-	ridiculous_cantor	-	69df5d1f22c4db2a06dca86e4b1eeba3	a82f86ea-c62c-46d2-9ae4-617c6642dd26	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 14:03:48	-	elegant_darwin	-	69df5d1f22c4db2a06dca86e4b1eeba3	4e011878-ec4b-4a9b-a3b0-029cd88b7001	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 14:04:27	9.3s	trusting_mirzakhani	ERR	5280a6729df14ac55b72ae7a3b1c23c2	762129ad-f665-4a51-bd0d-83fd3de5ebda	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-02 14:24:47	12s	clever_tuckerman	ERR	5280a6729df14ac55b72ae7a3b1c23c2	03b57d85-2f74-4a5c-980b-71c5c53c318b	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 13:06:59	2.4s	elated_miescher	ERR	2836143c2e1cece90bc203c26ec5a9b7	44d5fd4f-4739-4f3b-bd1e-3235794a1503	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 13:09:27	3.1s	fervent_jones	ERR	902d517258d098f7124d64d59e9d99b0	a5db48d7-1239-47f3-ab0c-ac22467ae52f	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 13:12:29	3s	clever_stallman	ERR	d3c50a911460bb16a2fb2e3c47f7a025	5941423f-9e90-433e-a6b7-d0804a033351	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 14:54:13	6m 5s	loving_panini	OK	a26ae3d6dc0cc634081152ceff6933ab	a93138cc-11bc-41bd-8355-015d96c8ea75	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:22:16	-	tender_montalcini	-	da9a7df4ae3a1b5907064f8c48bc701f	6cbd3dc6-8e3b-4834-accf-53f72f263e64	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:24:46	-	voluminous_koch	-	d8893b9404df9b625961496e7ba7bd66	d4c2b98a-01a3-4c05-baf7-3d343aaee1de	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:25:19	-	cheesy_mcclintock	-	819cf6a14b86bde54a83ba35340cb725	32141a5d-aae7-4b3e-ba62-43294f93433e	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:26:09	6m 3s	crazy_kirch	OK	8518f45a3874760427457592e44ae6b8	8759442f-ff6c-4c3e-a32d-a2da37f17374	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:40:21	6m 21s	amazing_sax	OK	bdea079742bca4ca0546c2016071dc8d	cdcec8cc-1460-4cde-9d96-7e95dff1d400	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:47:08	-	stoic_darwin	-	dd3312cd9ab87522b083fa69424a85c7	6d564148-7e0d-4c8a-8dd5-f083ed586690	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:48:15	5m 53s	amazing_swirles	ERR	dd3312cd9ab87522b083fa69424a85c7	3a1ab7d2-3e84-44c9-a3ed-f2a020b3d78a	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-05 15:54:12	-	fervent_coulomb	-	dd3312cd9ab87522b083fa69424a85c7	4da930c7-6fb8-446b-ad0d-1fffe9826c71	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 08:50:34	-	goofy_hoover	-	dd3312cd9ab87522b083fa69424a85c7	a3fb1639-99d2-441d-91cd-40483742c622	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 08:55:06	6m 2s	adoring_lovelace	OK	dd3312cd9ab87522b083fa69424a85c7	7930260b-c07e-4f3c-aac1-e258056b1aed	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 09:10:41	-	loving_faraday	-	b137ea9ed9b37fc5e45037444301c18b	e1d18ea6-022e-4b4c-b914-d202ee8a16c2	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 09:11:22	5m 54s	loving_descartes	OK	d7158d77cb8af23b65845f23906c9db4	95966897-9b58-420c-95b6-2ba37e8ebb11	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 12:04:34	-	sharp_venter	-	ca83f79f2aa6e0c0cde8e9bf325787b3	65e5d0f4-30f2-4c77-b860-93fc51bfd179	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 12:22:37	-	lethal_kay	-	f626d79b55bf8731481f4d09ad3c599c	0d86e119-445f-4dcf-989e-d2e7f654d10a	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 12:32:57	3.3s	exotic_agnesi	ERR	2781b69f0421ea7fdc17e669712911df	6ebc46e4-5872-429f-844c-2f3a138c9b94	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 13:05:13	6.4s	jovial_panini	ERR	957804c63f50b21cc52e9d2eb76cc684	4e0b5814-28ae-46d7-9ae5-a626e3ffb78d	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 13:10:48	10.2s	cheeky_jennings	ERR	c78996d356001729c3663819ca3da2df	d5ed6b91-3aa0-45f9-a5c5-f4265365aff1	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 13:21:35	6m 2s	deadly_cray	OK	c78996d356001729c3663819ca3da2df	25aa26c3-dcc6-41bc-92b5-78367f9c3c37	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 13:46:25	9.9s	stoic_austin	ERR	0f240000d171e7316058067b100df026	5ec1c31f-85af-4714-b997-9380e89bc7de	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-06 13:49:37	6m 4s	admiring_galileo	OK	0f240000d171e7316058067b100df026	12b860f7-0745-4a48-8afd-cd2ddd6e766d	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 09:24:18	6.6s	fervent_perlman	ERR	8508a6a206262c15e2579ef2d571ea8b	4fd83efb-ddfc-4301-a40b-1a99e28745aa	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 09:24:52	5.8s	furious_coulomb	ERR	8508a6a206262c15e2579ef2d571ea8b	295769b6-f648-4324-9854-bae130632f04	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 09:36:16	7.4s	silly_torricelli	ERR	8508a6a206262c15e2579ef2d571ea8b	6f35ae8c-bd86-4c3b-9a29-8efd2934d798	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 10:02:11	6.8s	goofy_albattani	ERR	8508a6a206262c15e2579ef2d571ea8b	f5357098-0b74-4f7d-9cad-4c62e47978b1	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 10:27:44	6m 11s	irreverent_volta	OK	8508a6a206262c15e2579ef2d571ea8b	e552ed98-769b-4663-8670-e64d62a8e1f8	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 13:06:22	6m 10s	determined_ardinghelli	OK	8508a6a206262c15e2579ef2d571ea8b	05d2619b-4252-4477-9625-465a80e367e4	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 14:28:59	6m	high_feynman	OK	8508a6a206262c15e2579ef2d571ea8b	14ac6ff1-a273-44b8-ad55-d27c9efef1c5	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 14:53:59	6m	tiny_woese	OK	8508a6a206262c15e2579ef2d571ea8b	9888e377-00d6-4699-91db-c42bc76cd07d	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 15:44:25	6m 5s	insane_ekeblad	OK	8508a6a206262c15e2579ef2d571ea8b	b985dc5d-8ebe-4294-9f67-6ff181bf5669	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-10 16:20:00	-	happy_swanson	-	8508a6a206262c15e2579ef2d571ea8b	09512fb0-b4ad-4d88-9076-829a12b531a5	nextflow run main.nf --input data/input --result_dir results
+2025-06-11 09:02:07	-	ecstatic_planck	-	8508a6a206262c15e2579ef2d571ea8b	9aa70d06-aeb2-4b6b-ab83-6b28fd315d2e	nextflow run main.nf --input data/input --result_dir results
+2025-06-11 09:17:15	-	big_bhaskara	-	8508a6a206262c15e2579ef2d571ea8b	6b3db545-b0b2-4eb2-98e1-db8739dbb4d4	nextflow run main.nf --input data_test/hbv --result_dir results
+2025-06-11 09:17:49	4.5s	romantic_poincare	OK	8508a6a206262c15e2579ef2d571ea8b	5503bd60-2ea3-4a54-a0f9-3460b081777c	nextflow run main.nf --input ../data_test --result_dir ../results
+2025-06-11 09:28:23	4.1s	friendly_keller	OK	8508a6a206262c15e2579ef2d571ea8b	7130a149-ea8e-4aab-8a17-5c6b20f7e082	nextflow run main.nf --input ../data_test --result_dir ../results
+2025-06-11 09:34:49	-	tiny_descartes	-	8508a6a206262c15e2579ef2d571ea8b	8fd29062-4357-431e-a685-163eb9b84fdf	nextflow run main.nf --input data_test/hbv --result_dir results
+2025-06-11 09:37:33	-	mighty_majorana	-	8508a6a206262c15e2579ef2d571ea8b	0e78fb42-7796-46ae-b318-91d101bba44b	nextflow run main.nf --input data_test/hbv --result_dir results
+2025-06-11 09:39:37	-	soggy_ritchie	-	8508a6a206262c15e2579ef2d571ea8b	9b200a96-995b-4eba-9089-5a810a3ce806	nextflow run main.nf --input data_test/hbv --result_dir results
+2025-06-11 09:44:20	-	determined_lamarr	-	8508a6a206262c15e2579ef2d571ea8b	2ab511a6-034e-4ff7-af29-aa1a2c902ef6	nextflow run main.nf --input data_test/hbv --result_dir results
+2025-06-11 09:44:45	6m 14s	berserk_chandrasekhar	OK	8508a6a206262c15e2579ef2d571ea8b	9dc8a2f4-6e6f-4e0f-814c-7bcccdb98be9	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+2025-06-11 10:29:03	-	cheesy_wegener	-	44680eb1fb081d1ef1c051d2297fa56f	8aa62ebc-7eb3-4bee-ae80-8dbaab722244	nextflow run main.nf --input data_test/hbv --result_dir results
+2025-06-11 10:46:33	-	goofy_stonebraker	-	44680eb1fb081d1ef1c051d2297fa56f	2ea320d1-c165-427a-9850-9d8991ddbebc	nextflow run main.nf --input /home/etudiant/fatemeh/hbv_pipeline/src/data_test/hbv --result_dir /home/etudiant/fatemeh/hbv_pipeline/src/results

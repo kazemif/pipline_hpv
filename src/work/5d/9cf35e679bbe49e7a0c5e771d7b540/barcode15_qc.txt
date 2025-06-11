@@ -1,3 +1,0 @@
-Sample ID       : barcode15
-Nombre de lignes: 57336
-Taille fichier  : 4.0K

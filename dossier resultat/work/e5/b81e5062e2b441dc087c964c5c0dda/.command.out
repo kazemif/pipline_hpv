@@ -1,0 +1,11 @@
+🔍 Traitement de : barcode05
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP Tue Nov 5 00:21:55 UTC 2024
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 14.91 Mo
+📁 Fichiers générés :
+total 68K
+-rw-r--r-- 1 etudiant etudiant  11K May  6 12:09 barcode05_GC_content.txt
+-rw-r--r-- 1 etudiant etudiant  21K May  6 12:09 barcode05_per_base_seq_score.txt
+-rw-r--r-- 1 etudiant etudiant 3.3K May  6 12:09 barcode05_read_length.txt
+-rw-r--r-- 1 etudiant etudiant  25K May  6 12:09 barcode05_seq_score.txt

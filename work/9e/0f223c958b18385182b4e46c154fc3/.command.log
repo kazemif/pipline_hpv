@@ -1,0 +1,12 @@
+🔍 Analyse de barcode15
+2025-06-11 12:38:06 Defining chunks
+2025-06-11 12:38:06 Process will use 1 CPU and deal arround 18482 reads/CPU
+2025-06-11 12:38:06 Performing parallel processing
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP PREEMPT_DYNAMIC Mon Apr 21 17:08:54 UTC 2025
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 13.84 Mo
+2025-06-11 12:40:01 Combining chunk results
+2025-06-11 12:40:01 Summarizing chunk results
+2025-06-11 12:40:01 Writting results
+2025-06-11 12:40:01 Running time: 0.0h:1.0m:54.0s::58

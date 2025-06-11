@@ -1,18 +1,18 @@
 process bam_coverage {
+
+    tag "${sample_id}"
+
     input:
-        path sorted_bam
-        path ref_genome
+    tuple val(sample_id), path(sorted_bam)
+    path genome_file
 
     output:
-        path "${sorted_bam.baseName}.coverage.bed"
+    tuple val(sample_id), path("${sample_id}.coverage.bed")
 
-    publishDir "${params.result_dir ?: './results'}/${sorted_bam.simpleName}", mode: 'copy'
+    publishDir "${params.result_dir}/${sample_id}/coverage", mode: 'copy'
 
     script:
     """
-    bedtools genomecov -bg -ibam ${sorted_bam} > ${sorted_bam.baseName}.coverage.bed
+    bedtools genomecov -d -ibam ${sorted_bam} > ${sample_id}.coverage.bed
     """
 }
-
-
-

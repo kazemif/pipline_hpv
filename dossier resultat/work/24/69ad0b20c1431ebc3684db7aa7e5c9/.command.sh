@@ -1,0 +1,6 @@
+#!/bin/bash -ue
+# 1. Mapping ➜ SAM
+minimap2 -ax map-ont sequence.fasta barcode05_trim_reads.fastq.gz > barcode05.sam
+
+# 2. SAM ➜ BAM trié
+samtools view -Sb barcode05.sam | samtools sort -o barcode05.sorted.bam

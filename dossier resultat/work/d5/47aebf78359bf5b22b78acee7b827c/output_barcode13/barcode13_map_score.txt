@@ -1,0 +1,5 @@
+map_score,mapped,occurence
+0,0,44
+27,1,1
+60,1,7
+

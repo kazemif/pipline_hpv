@@ -1,0 +1,431 @@
+🔍 Traitement de : barcode07
+2025-05-07 15:45:22 Sorting BAM file
+2025-05-07 15:45:22 Indexing BAM file
+2025-05-07 15:45:22 Building reads pileup
+2025-05-07 15:45:23 Sorting VCF file
+2025-05-07 15:45:23 Building pileup array
+2025-05-07 15:45:23 Parsing SNP at position 17
+2025-05-07 15:45:23 Skip position 17 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 26
+2025-05-07 15:45:23 Skip position 26 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 76
+2025-05-07 15:45:23 Skip position 76 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 79
+2025-05-07 15:45:23 Skip position 79 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 95
+2025-05-07 15:45:23 Skip position 95 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 114
+2025-05-07 15:45:23 Skip position 114 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 117
+2025-05-07 15:45:23 Skip position 117 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 131
+2025-05-07 15:45:23 Skip position 131 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 141
+2025-05-07 15:45:23 Skip position 141 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 158
+2025-05-07 15:45:23 Skip position 158 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 161
+2025-05-07 15:45:23 Skip position 161 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 162
+2025-05-07 15:45:23 Skip position 162 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 170
+2025-05-07 15:45:23 Skip position 170 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 173
+2025-05-07 15:45:23 Skip position 173 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 176
+2025-05-07 15:45:23 Skip position 176 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 185
+2025-05-07 15:45:23 Skip position 185 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 200
+2025-05-07 15:45:23 Skip position 200 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 209
+2025-05-07 15:45:23 Skip position 209 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 215
+2025-05-07 15:45:23 Skip position 215 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 218
+2025-05-07 15:45:23 Skip position 218 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 230
+2025-05-07 15:45:23 Skip position 230 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 236
+2025-05-07 15:45:23 Skip position 236 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 239
+2025-05-07 15:45:23 Skip position 239 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 254
+2025-05-07 15:45:23 Skip position 254 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 260
+2025-05-07 15:45:23 Skip position 260 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 263
+2025-05-07 15:45:23 Skip position 263 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 268
+2025-05-07 15:45:23 Skip position 268 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 280
+2025-05-07 15:45:23 Skip position 280 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 284
+2025-05-07 15:45:23 Skip position 284 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 287
+2025-05-07 15:45:23 Skip position 287 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 300
+2025-05-07 15:45:23 Skip position 300 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 314
+2025-05-07 15:45:23 Skip position 314 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 329
+2025-05-07 15:45:23 Skip position 329 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 330
+2025-05-07 15:45:23 Skip position 330 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 341
+2025-05-07 15:45:23 Skip position 341 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 351
+2025-05-07 15:45:23 Skip position 351 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 352
+2025-05-07 15:45:23 Skip position 352 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 368
+2025-05-07 15:45:23 Skip position 368 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 369
+2025-05-07 15:45:23 Skip position 369 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 374
+2025-05-07 15:45:23 Skip position 374 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 378
+2025-05-07 15:45:23 Skip position 378 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 381
+2025-05-07 15:45:23 Skip position 381 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 398
+2025-05-07 15:45:23 Skip position 398 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 404
+2025-05-07 15:45:23 Skip position 404 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 413
+2025-05-07 15:45:23 Skip position 413 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 422
+2025-05-07 15:45:23 Skip position 422 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 425
+2025-05-07 15:45:23 Skip position 425 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 426
+2025-05-07 15:45:23 Skip position 426 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 428
+2025-05-07 15:45:23 Skip position 428 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 443
+2025-05-07 15:45:23 Skip position 443 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 470
+2025-05-07 15:45:23 Skip position 470 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 476
+2025-05-07 15:45:23 Skip position 476 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 484
+2025-05-07 15:45:23 Skip position 484 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 515
+2025-05-07 15:45:23 Skip position 515 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 517
+2025-05-07 15:45:23 Skip position 517 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 534
+2025-05-07 15:45:23 Skip position 534 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 537
+2025-05-07 15:45:23 Skip position 537 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 581
+2025-05-07 15:45:23 Skip position 581 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 624
+2025-05-07 15:45:23 Skip position 624 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 636
+2025-05-07 15:45:23 Skip position 636 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 645
+2025-05-07 15:45:23 Skip position 645 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 660
+2025-05-07 15:45:23 Skip position 660 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 669
+2025-05-07 15:45:23 Skip position 669 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 678
+2025-05-07 15:45:23 Skip position 678 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 690
+2025-05-07 15:45:23 Skip position 690 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 691
+2025-05-07 15:45:23 Skip position 691 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 693
+2025-05-07 15:45:23 Skip position 693 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 705
+2025-05-07 15:45:23 Skip position 705 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 717
+2025-05-07 15:45:23 Skip position 717 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 720
+2025-05-07 15:45:23 Skip position 720 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 727
+2025-05-07 15:45:23 Skip position 727 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 729
+2025-05-07 15:45:23 Skip position 729 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 741
+2025-05-07 15:45:23 Skip position 741 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 751
+2025-05-07 15:45:23 Skip position 751 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 759
+2025-05-07 15:45:23 Skip position 759 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 770
+2025-05-07 15:45:23 Skip position 770 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 777
+2025-05-07 15:45:23 Skip position 777 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 783
+2025-05-07 15:45:23 Skip position 783 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 789
+2025-05-07 15:45:23 Skip position 789 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 801
+2025-05-07 15:45:23 Skip position 801 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 808
+2025-05-07 15:45:23 Skip position 808 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 813
+2025-05-07 15:45:23 Skip position 813 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 828
+2025-05-07 15:45:23 Skip position 828 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 839
+2025-05-07 15:45:23 Skip position 839 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 842
+2025-05-07 15:45:23 Skip position 842 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 843
+2025-05-07 15:45:23 Skip position 843 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 846
+2025-05-07 15:45:23 Skip position 846 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 855
+2025-05-07 15:45:23 Skip position 855 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 861
+2025-05-07 15:45:23 Skip position 861 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 870
+2025-05-07 15:45:23 Skip position 870 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 873
+2025-05-07 15:45:23 Skip position 873 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 879
+2025-05-07 15:45:23 Skip position 879 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 891
+2025-05-07 15:45:23 Skip position 891 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 894
+2025-05-07 15:45:23 Skip position 894 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 896
+2025-05-07 15:45:23 Skip position 896 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 915
+2025-05-07 15:45:23 Skip position 915 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 918
+2025-05-07 15:45:23 Skip position 918 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 919
+2025-05-07 15:45:23 Skip position 919 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 921
+2025-05-07 15:45:23 Skip position 921 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 939
+2025-05-07 15:45:23 Skip position 939 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 951
+2025-05-07 15:45:23 Skip position 951 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 966
+2025-05-07 15:45:23 Skip position 966 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 978
+2025-05-07 15:45:23 Skip position 978 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 993
+2025-05-07 15:45:23 Skip position 993 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1026
+2025-05-07 15:45:23 Skip position 1026 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1192
+2025-05-07 15:45:23 Skip position 1192 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1240
+2025-05-07 15:45:23 Skip position 1240 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1307
+2025-05-07 15:45:23 Skip position 1307 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1330
+2025-05-07 15:45:23 Skip position 1330 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1375
+2025-05-07 15:45:23 Skip position 1375 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1465
+2025-05-07 15:45:23 Skip position 1465 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1836
+2025-05-07 15:45:23 Skip position 1836 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1849
+2025-05-07 15:45:23 Skip position 1849 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1851
+2025-05-07 15:45:23 Skip position 1851 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1873
+2025-05-07 15:45:23 Skip position 1873 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1886
+2025-05-07 15:45:23 Skip position 1886 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1892
+2025-05-07 15:45:23 Skip position 1892 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1897
+2025-05-07 15:45:23 Skip position 1897 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1903
+2025-05-07 15:45:23 Skip position 1903 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1924
+2025-05-07 15:45:23 Skip position 1924 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1935
+2025-05-07 15:45:23 Skip position 1935 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1938
+2025-05-07 15:45:23 Skip position 1938 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1941
+2025-05-07 15:45:23 Skip position 1941 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 1983
+2025-05-07 15:45:23 Skip position 1983 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2096
+2025-05-07 15:45:23 Skip position 2096 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2101
+2025-05-07 15:45:23 Skip position 2101 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2102
+2025-05-07 15:45:23 Skip position 2102 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2104
+2025-05-07 15:45:23 Skip position 2104 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2125
+2025-05-07 15:45:23 Skip position 2125 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2137
+2025-05-07 15:45:23 Skip position 2137 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2139
+2025-05-07 15:45:23 Skip position 2139 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2145
+2025-05-07 15:45:23 Skip position 2145 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2148
+2025-05-07 15:45:23 Skip position 2148 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2154
+2025-05-07 15:45:23 Skip position 2154 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2158
+2025-05-07 15:45:23 Skip position 2158 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2160
+2025-05-07 15:45:23 Skip position 2160 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2166
+2025-05-07 15:45:23 Skip position 2166 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2169
+2025-05-07 15:45:23 Skip position 2169 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2173
+2025-05-07 15:45:23 Skip position 2173 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2175
+2025-05-07 15:45:23 Skip position 2175 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2187
+2025-05-07 15:45:23 Skip position 2187 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2190
+2025-05-07 15:45:23 Skip position 2190 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2191
+2025-05-07 15:45:23 Skip position 2191 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2208
+2025-05-07 15:45:23 Skip position 2208 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2209
+2025-05-07 15:45:23 Skip position 2209 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2211
+2025-05-07 15:45:23 Skip position 2211 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2214
+2025-05-07 15:45:23 Skip position 2214 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2217
+2025-05-07 15:45:23 Skip position 2217 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2220
+2025-05-07 15:45:23 Skip position 2220 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2223
+2025-05-07 15:45:23 Skip position 2223 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2234
+2025-05-07 15:45:23 Skip position 2234 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2235
+2025-05-07 15:45:23 Skip position 2235 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2244
+2025-05-07 15:45:23 Skip position 2244 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2247
+2025-05-07 15:45:23 Skip position 2247 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2256
+2025-05-07 15:45:23 Skip position 2256 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2262
+2025-05-07 15:45:23 Skip position 2262 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2268
+2025-05-07 15:45:23 Skip position 2268 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2274
+2025-05-07 15:45:23 Skip position 2274 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2313
+2025-05-07 15:45:23 Skip position 2313 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2325
+2025-05-07 15:45:23 Skip position 2325 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2328
+2025-05-07 15:45:23 Skip position 2328 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2331
+2025-05-07 15:45:23 Skip position 2331 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2346
+2025-05-07 15:45:23 Skip position 2346 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2349
+2025-05-07 15:45:23 Skip position 2349 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2367
+2025-05-07 15:45:23 Skip position 2367 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2371
+2025-05-07 15:45:23 Skip position 2371 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2383
+2025-05-07 15:45:23 Skip position 2383 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2388
+2025-05-07 15:45:23 Skip position 2388 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2397
+2025-05-07 15:45:23 Skip position 2397 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2409
+2025-05-07 15:45:23 Skip position 2409 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2427
+2025-05-07 15:45:23 Skip position 2427 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2428
+2025-05-07 15:45:23 Skip position 2428 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2436
+2025-05-07 15:45:23 Skip position 2436 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2440
+2025-05-07 15:45:23 Skip position 2440 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2470
+2025-05-07 15:45:23 Skip position 2470 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2472
+2025-05-07 15:45:23 Skip position 2472 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2476
+2025-05-07 15:45:23 Skip position 2476 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2478
+2025-05-07 15:45:23 Skip position 2478 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2511
+2025-05-07 15:45:23 Skip position 2511 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2523
+2025-05-07 15:45:23 Skip position 2523 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2534
+2025-05-07 15:45:23 Skip position 2534 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2535
+2025-05-07 15:45:23 Skip position 2535 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2544
+2025-05-07 15:45:23 Skip position 2544 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2622
+2025-05-07 15:45:23 Skip position 2622 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2634
+2025-05-07 15:45:23 Skip position 2634 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2637
+2025-05-07 15:45:23 Skip position 2637 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2640
+2025-05-07 15:45:23 Skip position 2640 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2643
+2025-05-07 15:45:23 Skip position 2643 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2667
+2025-05-07 15:45:23 Skip position 2667 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2691
+2025-05-07 15:45:23 Skip position 2691 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2695
+2025-05-07 15:45:23 Skip position 2695 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2712
+2025-05-07 15:45:23 Skip position 2712 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2730
+2025-05-07 15:45:23 Skip position 2730 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2757
+2025-05-07 15:45:23 Skip position 2757 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2766
+2025-05-07 15:45:23 Skip position 2766 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2778
+2025-05-07 15:45:23 Skip position 2778 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2790
+2025-05-07 15:45:23 Skip position 2790 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2802
+2025-05-07 15:45:23 Skip position 2802 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2804
+2025-05-07 15:45:23 Skip position 2804 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2813
+2025-05-07 15:45:23 Skip position 2813 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2817
+2025-05-07 15:45:23 Skip position 2817 due to unpassed quality test
+2025-05-07 15:45:23 Parsing SNP at position 2866
+2025-05-07 15:45:23 Parsing SNP at position 2867
+2025-05-07 15:45:23 Parsing SNP at position 2879
+2025-05-07 15:45:23 Parsing SNP at position 2910
+2025-05-07 15:45:23 Parsing SNP at position 2936
+2025-05-07 15:45:23 Parsing SNP at position 2940
+2025-05-07 15:45:23 Parsing SNP at position 2943
+2025-05-07 15:45:23 Parsing SNP at position 2964
+2025-05-07 15:45:23 Parsing SNP at position 2966
+2025-05-07 15:45:23 Parsing SNP at position 2979
+2025-05-07 15:45:23 Parsing SNP at position 3008
+2025-05-07 15:45:23 Parsing SNP at position 3032
+2025-05-07 15:45:23 Parsing SNP at position 3052
+2025-05-07 15:45:23 Parsing SNP at position 3067
+2025-05-07 15:45:24 Parsing SNP at position 3069
+2025-05-07 15:45:24 Parsing SNP at position 3078
+2025-05-07 15:45:24 Parsing SNP at position 3107
+2025-05-07 15:45:24 Parsing SNP at position 3108
+2025-05-07 15:45:24 Writting results
+2025-05-07 15:45:24 Running time: 0h:0m:1s::22
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP Tue Nov 5 00:21:55 UTC 2024
+SYSTEM INFO: CPU: 12

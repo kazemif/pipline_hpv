@@ -1,0 +1,91 @@
+process bam_indexing {
+    input:
+    tuple val(sample_id), path(sorted_bam)
+
+    output:
+    tuple val(sample_id), path("${sorted_bam}.bai")
+
+    publishDir "${params.result_dir ?: './results'}/${sample_id}", mode: 'copy'
+
+    script:
+    """
+    samtools index ${sorted_bam}
+    """
+}
+
+******************************************************************
+
+   // Étape 1 : BAM + BAI pour appel de variants
+   // variant_input_ch = mapped_bam_ch
+   // .join(indexed_bam_ch)
+   // .map { id, bam, sam, bai -> tuple(id, bam, bai) }
+
+// Étape 2 : Appel de variants
+   // variant_ch = variant_calling(variant_input_ch, file(params.ref_genome))
+
+// Étape 3 : Analyse du fichier VCF + extraction profondeur
+   // variant_qc_ch = parse_variant_qc(
+   // variant_ch.map { sample_id, vcf_file, _ -> tuple(sample_id, vcf_file) }
+//)
+
+
+
+
+//////////////////////////////////ces corect 
+
+process consensus_generation {
+
+    input:
+    tuple val(sample_id), path(vcf), path(tbi), path(ref_genome), path(lowcov_bed)
+
+    output:
+    path("${sample_id}.consensus.fa")
+    path("${sample_id}.tmp.fa")  // on garde aussi le fichier temporaire
+
+    publishDir "${params.result_dir ?: './results'}/${sample_id}", mode: 'copy'
+
+    script:
+    """
+    set -e
+
+    # Étape 1 : Générer la séquence consensus à partir du fichier VCF
+    bcftools consensus -f ${ref_genome} ${vcf} > ${sample_id}.tmp.fa
+
+    # Étape 2 : Masquer les régions de faible couverture avec bedtools
+    bedtools maskfasta -fi ${sample_id}.tmp.fa -bed ${lowcov_bed} -fo ${sample_id}.consensus.fa
+
+    # On NE supprime PAS le fichier temporaire ici
+    """
+}
+
+
+
+
+
+
+
+
+process consensus_generation {
+    tag "$sample_id"
+
+    input:
+    tuple val(sample_id), path(filtered_vcf), path(ref_genome), path(lowcov_bed)
+
+    output:
+    path("${sample_id}.tmp.fa")
+    path("${sample_id}.consensus.fa")
+
+    // copie dans results/barcodeXX/consensus
+    publishDir "${params.result_dir}/${sample_id}/consensus", mode: 'copy'
+
+    script:
+    """
+    set -e
+
+    # 1) Séquence consensus brute
+    bcftools consensus -f ${ref_genome} ${filtered_vcf} > ${sample_id}.tmp.fa
+
+    # 2) Masquer les régions low coverage
+    bedtools maskfasta -fi ${sample_id}.tmp.fa -bed ${lowcov_bed} -fo ${sample_id}.consensus.fa
+    """
+}

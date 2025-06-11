@@ -1,0 +1,2 @@
+usage: parse_sam.py [-h] [-i INPUT] [-o OUTPUT] [-c CPU] [-s SAMPLE]
+parse_sam.py: error: argument -c/--cpu: invalid int value: 'null'

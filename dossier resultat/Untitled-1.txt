@@ -1,0 +1,191 @@
+generate_all_qc_plots <- function(base_dir, barcodes) {
+  library(readr)
+  library(dplyr)
+  library(ggplot2)
+  library(stringr)
+  
+  plots <- list()
+  
+  # 1. Composition GC
+  plots$gc <- {
+    all_gc <- data.frame()
+    for (bc in barcodes) {
+      path <- file.path(base_dir, bc, "qc_fastq", paste0("output_", bc), paste0(bc, "_GC_content.txt"))
+      if (file.exists(path)) {
+        df <- read_csv(path, show_col_types = FALSE)
+        df$barcode <- bc
+        all_gc <- bind_rows(all_gc, df)
+      }
+    }
+    ggplot(all_gc, aes(x = GC_content, color = barcode)) +
+      geom_density(size = 0.5) +
+      labs(title = "1. Composition en GC", x = "GC (%)", y = "Densité") +
+      theme_minimal()
+  }
+  
+  # 2. Longueur des reads
+  plots$length <- {
+    all_lengths <- data.frame()
+    for (bc in barcodes) {
+      path <- file.path(base_dir, bc, "qc_fastq", paste0("output_", bc), paste0(bc, "_read_length.txt"))
+      if (file.exists(path)) {
+        df <- read_csv(path, show_col_types = FALSE)
+        colnames(df) <- "read_length"
+        df$barcode <- bc
+        all_lengths <- bind_rows(all_lengths, df)
+      }
+    }
+    ggplot(all_lengths, aes(x = read_length, color = barcode)) +
+      geom_density(size = 0.5) +
+      labs(title = "2. Longueur des reads", x = "Longueur (bases)", y = "Densité") +
+      theme_minimal()
+  }
+  
+  # 3. Score qualité (Phred)
+  plots$phred_score <- {
+    all_score <- data.frame()
+    for (bc in barcodes) {
+      path <- file.path(base_dir, bc, "qc_fastq", paste0("output_", bc), paste0(bc, "_seq_score.txt"))
+      if (file.exists(path)) {
+        df <- read_csv(path, show_col_types = FALSE)
+        colnames(df) <- "seq_score"
+        df$barcode <- bc
+        all_score <- bind_rows(all_score, df)
+      }
+    }
+    ggplot(all_score, aes(x = seq_score, color = barcode)) +
+      geom_density(size = 0.5) +
+      labs(title = "3. Score qualité (Phred)", x = "Score", y = "Densité") +
+      theme_minimal()
+  }
+  
+  # 4. Score Phred par position
+  plots$phred_by_position <- {
+    all_median <- data.frame()
+    for (bc in barcodes) {
+      path <- file.path(base_dir, bc, "qc_fastq", paste0("output_", bc), paste0(bc, "_per_base_seq_score.txt"))
+      if (file.exists(path)) {
+        mat <- as.matrix(read.table(path, header = FALSE))
+        med <- apply(mat, 2, median, na.rm = TRUE)
+        df <- data.frame(position = seq_along(med), score = med, barcode = bc)
+        all_median <- bind_rows(all_median, df)
+      }
+    }
+    ggplot(all_median, aes(x = position, y = score, color = barcode)) +
+      geom_line(size = 0.7) +
+      labs(title = "4. Score qualité par position", x = "Position", y = "Score qualité") +
+      theme_minimal()
+  }
+  
+
+  # 5. Proportion reads mappés
+plots$reads_mapped <- {
+  read_stats <- list()
+
+  for (bc in barcodes) {
+    path <- file.path(
+      base_dir, bc,
+      "read_alignment_stats", paste0("output_", bc),
+      paste0(bc, "_read_count.txt")
+    )
+    if (!file.exists(path)) next
+
+    # 🔹 Lire toutes les lignes, ignorer l’en-tête
+    lines <- readLines(path)
+    if (length(lines) < 2) next
+    lines <- lines[-1]                     # on saute la première ligne “read occurence”
+    lines <- lines[lines != ""]            # enlever les lignes vides
+    lines <- lines[!grepl("^total", lines, ignore.case=TRUE)]
+
+    if (length(lines) == 0) next
+
+    # 🔹 Extraire "read" (toute la partie texte) et "occurence" (nombre)
+    mat <- stringr::str_match(lines, "^(.*)\\s+(\\d+)$")
+    df  <- data.frame(
+      read      = mat[,2],
+      occurence = as.numeric(mat[,3]),
+      stringsAsFactors = FALSE
+    )
+
+    # 🔹 Construire les champs Type, Count, barcode
+    df <- df %>%
+      mutate(
+        Type    = ifelse(tolower(read) %in% c("no mapped","unmapped"), "Unmapped",
+                  ifelse(grepl("mapped", tolower(read)),     "Mapped", read)),
+        Count   = occurence,
+        barcode = bc
+      )
+
+    read_stats[[bc]] <- df
+  }
+
+  # 🔁 Fusionner
+  read_stats_df <- dplyr::bind_rows(read_stats)
+  if (nrow(read_stats_df)==0 || !"barcode" %in% colnames(read_stats_df)) {
+    stop("🚨 Aucun read_count valide trouvé ou colonne 'barcode' manquante.")
+  }
+
+  # 🔹 Calcul des proportions
+  summary <- read_stats_df %>%
+    group_by(barcode) %>%
+    mutate(Proportion = Count / sum(Count) * 100) %>%
+    ungroup() %>%
+    mutate(barcode = factor(barcode, levels=rev(unique(barcode))))
+
+  # 🔹 Graphique ggplot
+  ggplot(summary, aes(x=barcode, y=Proportion, fill=Type)) +
+    geom_bar(stat="identity") +
+    coord_flip() +
+    scale_fill_manual(values=c("Mapped"="lightgreen","Unmapped"="firebrick")) +
+    labs(
+      title="5. Proportion des reads mappés",
+      x="", y="Proportion (%)"
+    ) +
+    theme_minimal()
+}
+
+
+
+  
+  # 6. Longueur reads mappés
+  plots$length_mapped <- {
+    read_all <- data.frame()
+    for (bc in barcodes) {
+      path <- file.path(base_dir, bc, "read_alignment_stats", paste0("output_", bc), paste0(bc, "_read_length.txt"))
+      if (file.exists(path)) {
+        df <- read_csv(path, show_col_types = FALSE)
+        colnames(df) <- c("read_length", "mapped", "occurence")
+        df <- df %>%
+          filter(occurence > 0, read_length > 0) %>%
+          mutate(barcode = bc, Type = ifelse(mapped == 1, "Mapped", "Unmapped"))
+        read_all <- bind_rows(read_all, df)
+      }
+    }
+    ggplot(read_all, aes(x = read_length, weight = occurence, color = barcode, linetype = Type)) +
+      geom_density(size = 0.8) +
+      labs(title = "6. Longueur reads mappés", x = "Longueur", y = "Densité") +
+      theme_minimal()
+  }
+  
+  # 7. Score qualité des reads mappés
+  plots$phred_mapped <- {
+    score_all <- data.frame()
+    for (bc in barcodes) {
+      path <- file.path(base_dir, bc, "read_alignment_stats", paste0("output_", bc), paste0(bc, "_seq_score.txt"))
+      if (file.exists(path)) {
+        df <- read_csv(path, show_col_types = FALSE)
+        colnames(df) <- c("seq_score", "mapped", "occurence")
+        df <- df %>%
+          filter(occurence > 0, seq_score > 0) %>%
+          mutate(barcode = bc, Type = ifelse(mapped == 1, "Mapped", "Unmapped"))
+        score_all <- bind_rows(score_all, df)
+      }
+    }
+    ggplot(score_all, aes(x = seq_score, weight = occurence, color = barcode, linetype = Type)) +
+      geom_density(size = 0.8) +
+      labs(title = "7. Score qualité reads mappés", x = "Score qualité", y = "Densité") +
+      theme_minimal()
+  }
+  
+  return(plots)
+}

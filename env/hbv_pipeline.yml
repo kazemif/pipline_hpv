@@ -13,5 +13,23 @@ dependencies:
   - nextflow=24.10.5
   - numpy=1.23.5
   - pandas=1.5.3
+  - notebook=7.4.2
+  - matplotlib=3.8.0
+  - seaborn=0.12.2
+  - r-base=4.2.3
+  - r-ggplot2
+  - r-rmarkdown
+  - r-readr
+  - r-plotly
+  - r-dplyr
+  - r-readr
+  - r-stringr
+  - r-knitr
+  - r-kableextra
+  
+
+
+  
+
 
 

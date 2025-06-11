@@ -1,0 +1,18 @@
+🔍 Traitement de : barcode03
+2025-06-05 15:40:41 Defining chunks
+2025-06-05 15:40:41 Process will use 1 CPU and deal arround 4474 reads/CPU
+2025-06-05 15:40:41 Performing parallel processing
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP PREEMPT_DYNAMIC Mon Apr 21 17:08:54 UTC 2025
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 4.93 Mo
+2025-06-05 15:41:36 Combining chunk results
+2025-06-05 15:41:36 Summarizing chunk results
+2025-06-05 15:41:36 Writting results
+2025-06-05 15:41:36 Running time: 0h:0m:55s::41
+📁 Fichiers générés :
+total 68K
+-rw-r--r-- 1 etudiant etudiant  16K Jun  5 15:41 barcode03_GC_content.txt
+-rw-r--r-- 1 etudiant etudiant  22K Jun  5 15:41 barcode03_per_base_seq_score.txt
+-rw-r--r-- 1 etudiant etudiant 4.9K Jun  5 15:41 barcode03_read_length.txt
+-rw-r--r-- 1 etudiant etudiant  18K Jun  5 15:41 barcode03_seq_score.txt

@@ -1,0 +1,3 @@
+QC report for barcode02
+Number of reads: 3946
+Total lines: 15784

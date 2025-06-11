@@ -5,7 +5,8 @@ process consensus_generation {
 
     output:
     path("${sample_id}.consensus.fa")
-    path("${sample_id}.tmp.fa")  // on garde aussi le fichier temporaire
+    path("${sample_id}.tmp.fa")
+    path("${sample_id}.lowcov.valid.bed") // exporté pour vérification si tu veux
 
     publishDir "${params.result_dir ?: './results'}/${sample_id}", mode: 'copy'
 
@@ -13,12 +14,14 @@ process consensus_generation {
     """
     set -e
 
-    # Étape 1 : Générer la séquence consensus à partir du fichier VCF
+    # Étape 1 : Générer la séquence consensus à partir du VCF
     bcftools consensus -f ${ref_genome} ${vcf} > ${sample_id}.tmp.fa
 
-    # Étape 2 : Masquer les régions de faible couverture avec bedtools
-    bedtools maskfasta -fi ${sample_id}.tmp.fa -bed ${lowcov_bed} -fo ${sample_id}.consensus.fa
+    # Étape 2 : Filtrer le fichier BED pour garder uniquement les lignes valides
+    awk '\$2 < \$3' ${lowcov_bed} > ${sample_id}.lowcov.valid.bed
 
-    # On NE supprime PAS le fichier temporaire ici
+    # Étape 3 : Masquer les régions à faible couverture
+    bedtools maskfasta -fi ${sample_id}.tmp.fa -bed ${sample_id}.lowcov.valid.bed -fo ${sample_id}.consensus.fa
     """
 }
+

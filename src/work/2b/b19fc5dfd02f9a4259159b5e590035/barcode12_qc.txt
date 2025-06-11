@@ -1,3 +1,0 @@
-Sample ID       : barcode12
-Nombre de lignes: 6728
-Taille fichier  : 4.0K

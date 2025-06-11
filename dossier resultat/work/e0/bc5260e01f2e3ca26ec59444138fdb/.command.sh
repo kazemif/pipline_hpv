@@ -1,0 +1,2 @@
+#!/bin/bash -ue
+python3 ./tools/Python/parse_fastq/src/parse_fastq/main.py     --input barcode08_trim_reads.fastq.gz     --output fastq_qc_barcode08.csv

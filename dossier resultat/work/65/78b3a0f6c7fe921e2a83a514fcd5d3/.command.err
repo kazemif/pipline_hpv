@@ -1,0 +1,34 @@
+2025-06-10 14:55:33 Sorting BAM file
+2025-06-10 14:55:34 Indexing BAM file
+2025-06-10 14:55:34 Building reads pileup
+2025-06-10 14:55:34 Sorting VCF file
+2025-06-10 14:55:34 Building pileup array
+2025-06-10 14:55:34 Parsing SNP at position 2879
+2025-06-10 14:55:34 Skip position 2879 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 2935
+2025-06-10 14:55:34 Skip position 2935 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 2936
+2025-06-10 14:55:34 Skip position 2936 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 2940
+2025-06-10 14:55:34 Skip position 2940 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 2943
+2025-06-10 14:55:34 Skip position 2943 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 2978
+2025-06-10 14:55:34 Skip position 2978 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 3008
+2025-06-10 14:55:34 Skip position 3008 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 3024
+2025-06-10 14:55:34 Skip position 3024 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 3026
+2025-06-10 14:55:34 Skip position 3026 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 3032
+2025-06-10 14:55:34 Skip position 3032 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 3052
+2025-06-10 14:55:34 Skip position 3052 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 3067
+2025-06-10 14:55:34 Skip position 3067 due to unpassed quality test
+2025-06-10 14:55:34 Parsing SNP at position 3069
+2025-06-10 14:55:34 Skip position 3069 due to unpassed quality test
+2025-06-10 14:55:34 WARNING: None variant had been retained during the filtration process.
+2025-06-10 14:55:34 Writting results
+2025-06-10 14:55:34 Running time: 0h:0m:0s::10

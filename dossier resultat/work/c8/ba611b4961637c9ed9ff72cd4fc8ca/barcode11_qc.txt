@@ -1,0 +1,2 @@
+Fichier : barcode11_trim_reads.fastq.gz
+Nombre de lignes :

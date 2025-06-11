@@ -1,0 +1,3 @@
+QC report for barcode13
+Number of reads: 51
+Total lines: 204

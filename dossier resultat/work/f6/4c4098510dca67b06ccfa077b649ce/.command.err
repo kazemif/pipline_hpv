@@ -1,0 +1,14 @@
+
+
+processing file: rapport_final.Rmd
+Error in `file.path()`:
+! object 'base_dir' not found
+Backtrace:
+ 1. base::suppressMessages(generate_all_qc_plots(base_dir, barcodes))
+ 3. global generate_all_qc_plots(base_dir, barcodes)
+ 7. base::lapply(...)
+ 8. FUN(X[[i]], ...)
+ 9. base::file.path(...)
+
+Quitting from lines 13-49 [setup] (rapport_final.Rmd)
+Execution halted

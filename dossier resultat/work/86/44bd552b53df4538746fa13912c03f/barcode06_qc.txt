@@ -1,0 +1,3 @@
+QC report for barcode06
+Number of reads: 769
+Total lines: 3076

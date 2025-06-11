@@ -1,0 +1,3 @@
+QC report for barcode11
+Number of reads: 12033
+Total lines: 48132

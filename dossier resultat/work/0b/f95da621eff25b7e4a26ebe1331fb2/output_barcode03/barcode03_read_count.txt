@@ -1,0 +1,4 @@
+read	occurence
+Mapped	1653
+No mapped	2860
+total	4513

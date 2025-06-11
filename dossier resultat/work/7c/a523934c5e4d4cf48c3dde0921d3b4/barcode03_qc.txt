@@ -1,0 +1,3 @@
+QC report for barcode03
+Number of reads: 4474
+Total lines: 17896

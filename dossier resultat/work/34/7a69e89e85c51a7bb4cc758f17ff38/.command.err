@@ -1,0 +1,12 @@
+2025-04-25 13:06:43 Defining chunks
+2025-04-25 13:06:43 Process will use 1 CPU and deal arround 1374 reads/CPU
+Traceback (most recent call last):
+  File "/home/etudiant/fatemeh/stage_fatemeh_2025/tools/Python/parse_fastq/src/parse_fastq/main.py", line 94, in <module>
+    main()
+  File "/home/etudiant/fatemeh/stage_fatemeh_2025/tools/Python/parse_fastq/src/parse_fastq/main.py", line 64, in main
+    chunk_args = parse_fastq.parallel_read.compute_chunk_position(args.input, args.cpu)
+  File "/home/etudiant/conda_config/miniconda3/envs/hbv_pipeline/lib/python3.10/site-packages/parse_fastq/parallel_read.py", line 123, in compute_chunk_position
+    while not verify_new_read(mmap_input, chunk_end):
+  File "/home/etudiant/conda_config/miniconda3/envs/hbv_pipeline/lib/python3.10/site-packages/parse_fastq/parallel_read.py", line 75, in verify_new_read
+    char = mmap_object.read(2).decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9e in position 0: invalid start byte

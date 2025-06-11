@@ -1,0 +1,527 @@
+Apr-08 14:35:43.261 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main_a.nf --input /home/etudiant/fatemeh/hbv_pipeline/data_test/hbv
+Apr-08 14:35:43.471 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.5
+Apr-08 14:35:43.490 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/etudiant/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.4,nf-tower@1.9.3,nf-wave@1.7.4
+Apr-08 14:35:43.515 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-08 14:35:43.515 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-08 14:35:43.518 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-08 14:35:43.532 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-08 14:35:43.572 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/etudiant/.nextflow/secrets/store.json
+Apr-08 14:35:43.582 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@534243e4] - activable => nextflow.secret.LocalSecretsProvider@534243e4
+Apr-08 14:35:43.628 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-08 14:35:43.656 [main] DEBUG nextflow.cli.CmdRun - Launching `main_a.nf` [cranky_wing] DSL2 - revision: 6a362542bf
+Apr-08 14:35:43.658 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-08 14:35:43.658 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-08 14:35:43.719 [main] DEBUG nextflow.Session - Session UUID: 239c5a2a-cad1-4f10-bfb3-571772213684
+Apr-08 14:35:43.720 [main] DEBUG nextflow.Session - Run name: cranky_wing
+Apr-08 14:35:43.720 [main] DEBUG nextflow.Session - Executor pool size: 12
+Apr-08 14:35:43.727 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-08 14:35:43.734 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-08 14:35:43.776 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.5 build 5935
+  Created: 04-03-2025 17:55 UTC (18:55 CEST)
+  System: Linux 5.15.167.4-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 153615@etudiant [127.0.1.1]
+  CPUs: 12 - Mem: 7.6 GB (6.7 GB) - Swap: 2 GB (1.9 GB)
+Apr-08 14:35:43.798 [main] DEBUG nextflow.Session - Work-dir: /home/etudiant/fatemeh/hbv_pipeline/src/work [ext2/ext3]
+Apr-08 14:35:43.798 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/etudiant/fatemeh/hbv_pipeline/src/bin
+Apr-08 14:35:43.808 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-08 14:35:43.815 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-08 14:35:43.842 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-08 14:35:43.853 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Apr-08 14:35:43.918 [main] DEBUG nextflow.Session - Session start
+Apr-08 14:35:44.598 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-08 14:35:45.109 [main] INFO  nextflow.script.BaseScript - 🔹 Dossier multiplex détecté
+Apr-08 14:35:45.309 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.309 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.314 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-08 14:35:45.320 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=7.6 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Apr-08 14:35:45.322 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-08 14:35:45.394 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.394 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.400 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.400 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.407 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.407 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.412 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.412 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.417 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.418 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.434 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.435 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.452 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.452 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.459 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-08 14:35:45.459 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-08 14:35:45.461 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: consensus_generation, bam_coverage, parse_fastq_qc, trim_reads, parse_variant_qc, variant_calling, merge_fastq, low_coverage_filtering, bam_indexing, parse_read_align, decompress_archive, mapping_bam
+Apr-08 14:35:45.462 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Apr-08 14:35:45.462 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > merge_fastq
+Apr-08 14:35:45.463 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trim_reads
+Apr-08 14:35:45.463 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > parse_fastq_qc
+Apr-08 14:35:45.463 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > mapping_bam
+Apr-08 14:35:45.463 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > parse_read_align
+Apr-08 14:35:45.464 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bam_indexing
+Apr-08 14:35:45.464 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bam_coverage
+Apr-08 14:35:45.464 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > variant_calling
+Apr-08 14:35:45.464 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > consensus_generation
+Apr-08 14:35:45.465 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_609fc33e4d443deb: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/bam_indexing.nf
+  Script_18adb1bf2cfabedb: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/parse_variant_qc.nf
+  Script_da99588e9ba0ab8d: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/parse_read_align.nf
+  Script_e09f787c6a9f3153: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/low_coverage_filtering.nf
+  Script_ca44aa2acef43985: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/decompress_archive.nf
+  Script_c518f33b0ad7dc10: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/bam_coverage.nf
+  Script_ca048a29cf795890: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/trim_reads.nf
+  Script_745e17c4fb6c01bc: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/mapping_bam.nf
+  Script_02dcf94b89a312fc: /home/etudiant/fatemeh/hbv_pipeline/src/main_a.nf
+  Script_93c48b9b08e1c52e: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/parse_fastq_qc.nf
+  Script_cfe7c3128b148ca5: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/variant_calling.nf
+  Script_2e0cb986a58aedd5: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/consensus_generation.nf
+  Script_4ac743be9ad34264: /home/etudiant/fatemeh/hbv_pipeline/src/./modules/merge_fastq.nf
+Apr-08 14:35:45.465 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-08 14:35:45.465 [main] DEBUG nextflow.Session - Session await
+Apr-08 14:35:45.652 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.655 [Task submitter] INFO  nextflow.Session - [dd/f1067b] Submitted process > merge_fastq (8)
+Apr-08 14:35:45.669 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.669 [Task submitter] INFO  nextflow.Session - [a2/345665] Submitted process > merge_fastq (5)
+Apr-08 14:35:45.679 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.679 [Task submitter] INFO  nextflow.Session - [81/de94c4] Submitted process > merge_fastq (7)
+Apr-08 14:35:45.687 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.687 [Task submitter] INFO  nextflow.Session - [a8/5b85c3] Submitted process > merge_fastq (11)
+Apr-08 14:35:45.697 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.698 [Task submitter] INFO  nextflow.Session - [96/9fa37d] Submitted process > merge_fastq (10)
+Apr-08 14:35:45.708 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.708 [Task submitter] INFO  nextflow.Session - [c4/eb3c59] Submitted process > merge_fastq (6)
+Apr-08 14:35:45.716 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.717 [Task submitter] INFO  nextflow.Session - [3d/7a4b2a] Submitted process > merge_fastq (3)
+Apr-08 14:35:45.729 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.730 [Task submitter] INFO  nextflow.Session - [3a/7d2783] Submitted process > merge_fastq (4)
+Apr-08 14:35:45.739 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.740 [Task submitter] INFO  nextflow.Session - [e9/5495c6] Submitted process > merge_fastq (12)
+Apr-08 14:35:45.748 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.749 [Task submitter] INFO  nextflow.Session - [13/d7e0eb] Submitted process > merge_fastq (2)
+Apr-08 14:35:45.769 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.770 [Task submitter] INFO  nextflow.Session - [c9/536fa5] Submitted process > merge_fastq (9)
+Apr-08 14:35:45.788 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.789 [Task submitter] INFO  nextflow.Session - [f8/42aea2] Submitted process > merge_fastq (1)
+Apr-08 14:35:45.937 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: merge_fastq (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/dd/f1067b46bd15690ddddcd220387def]
+Apr-08 14:35:45.943 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-08 14:35:45.952 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:45.954 [Task submitter] INFO  nextflow.Session - [75/b8266e] Submitted process > merge_fastq (16)
+Apr-08 14:35:45.988 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: merge_fastq (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/81/de94c4d5a9d23e373cdb89ca5a4aa2]
+Apr-08 14:35:46.003 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.004 [Task submitter] INFO  nextflow.Session - [6f/5d0327] Submitted process > merge_fastq (15)
+Apr-08 14:35:46.016 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: merge_fastq (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a8/5b85c3603b0a765fe937fa3a828ae3]
+Apr-08 14:35:46.032 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.034 [Task submitter] INFO  nextflow.Session - [66/335a2f] Submitted process > merge_fastq (14)
+Apr-08 14:35:46.035 [TaskFinalizer-1] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `result_dir` -- Initialise it to a default value eg. `params.result_dir = some_value`
+Apr-08 14:35:46.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: merge_fastq (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c4/eb3c59ad96f98d8ca65cb0f4da0e7e]
+Apr-08 14:35:46.103 [TaskFinalizer-4] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-08 14:35:46.235 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: merge_fastq (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/96/9fa37dac4ba5b6f79858b1910e9dc5]
+Apr-08 14:35:46.246 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: merge_fastq (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/e9/5495c619e58da84ffc3aac2ffc1f52]
+Apr-08 14:35:46.250 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.250 [Task submitter] INFO  nextflow.Session - [25/1f2bc5] Submitted process > merge_fastq (13)
+Apr-08 14:35:46.264 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.266 [Task submitter] INFO  nextflow.Session - [60/8b43d6] Submitted process > trim_reads (1)
+Apr-08 14:35:46.320 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: merge_fastq (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3a/7d2783bc42a8e3b5de02037ba20bc4]
+Apr-08 14:35:46.328 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.334 [Task submitter] INFO  nextflow.Session - [2c/3eda2a] Submitted process > trim_reads (3)
+Apr-08 14:35:46.462 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: merge_fastq (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c9/536fa5d14510bb84e0bc39730c6204]
+Apr-08 14:35:46.478 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.481 [Task submitter] INFO  nextflow.Session - [ec/18e0d4] Submitted process > trim_reads (2)
+Apr-08 14:35:46.487 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: merge_fastq (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3d/7a4b2a2e9ee7e562d23a226d8acde0]
+Apr-08 14:35:46.488 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: merge_fastq (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/13/d7e0ebc2f5c294c8dbc464ca666f94]
+Apr-08 14:35:46.500 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.501 [Task submitter] INFO  nextflow.Session - [a5/ed4e1d] Submitted process > trim_reads (4)
+Apr-08 14:35:46.513 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.516 [Task submitter] INFO  nextflow.Session - [29/5338fa] Submitted process > trim_reads (5)
+Apr-08 14:35:46.543 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: merge_fastq (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f8/42aea2071de5fe5423af8140979853]
+Apr-08 14:35:46.573 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.598 [Task submitter] INFO  nextflow.Session - [fb/846d6a] Submitted process > trim_reads (6)
+Apr-08 14:35:46.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: merge_fastq (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a2/3456650bc74613bdabf2081f2d51d0]
+Apr-08 14:35:46.891 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.893 [Task submitter] INFO  nextflow.Session - [d6/a54ffd] Submitted process > trim_reads (7)
+Apr-08 14:35:46.910 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: merge_fastq (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/75/b8266e2340901067bfc34dfaba5c88]
+Apr-08 14:35:46.923 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:46.925 [Task submitter] INFO  nextflow.Session - [c8/7e78f7] Submitted process > trim_reads (8)
+Apr-08 14:35:47.266 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: merge_fastq (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/66/335a2fd30bf7f2a871354d47b1ffcb]
+Apr-08 14:35:47.272 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:47.289 [Task submitter] INFO  nextflow.Session - [0c/678e18] Submitted process > trim_reads (10)
+Apr-08 14:35:47.347 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: merge_fastq (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/25/1f2bc540f266ee5d294d8af68918f2]
+Apr-08 14:35:47.354 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:47.355 [Task submitter] INFO  nextflow.Session - [b0/9a1757] Submitted process > trim_reads (9)
+Apr-08 14:35:47.588 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: trim_reads (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/2c/3eda2ab4d3a2c53fd12f87990e0f6e]
+Apr-08 14:35:47.597 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:47.624 [Task submitter] INFO  nextflow.Session - [3b/2d674b] Submitted process > trim_reads (11)
+Apr-08 14:35:48.445 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: trim_reads (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/60/8b43d68ac01a729e3dc1fd94dbf9f5]
+Apr-08 14:35:48.451 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:48.452 [Task submitter] INFO  nextflow.Session - [2f/a38f5b] Submitted process > trim_reads (12)
+Apr-08 14:35:48.557 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: trim_reads (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a5/ed4e1db7f6a3cbe2ebbf174b1a3542]
+Apr-08 14:35:48.567 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:48.569 [Task submitter] INFO  nextflow.Session - [11/eb7fe2] Submitted process > trim_reads (13)
+Apr-08 14:35:48.630 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: trim_reads (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/ec/18e0d49eb320febd8aa23e92db1893]
+Apr-08 14:35:48.637 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:48.639 [Task submitter] INFO  nextflow.Session - [e1/8b7643] Submitted process > trim_reads (14)
+Apr-08 14:35:48.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: merge_fastq (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/6f/5d03278e458876b9bc4b576865547c]
+Apr-08 14:35:48.727 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:48.727 [Task submitter] INFO  nextflow.Session - [7c/61f9ff] Submitted process > trim_reads (15)
+Apr-08 14:35:49.399 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: trim_reads (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/fb/846d6af82225887df632646599eae6]
+Apr-08 14:35:49.402 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:49.402 [Task submitter] INFO  nextflow.Session - [5b/4dc4d1] Submitted process > parse_fastq_qc (1)
+Apr-08 14:35:49.674 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: parse_fastq_qc (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/5b/4dc4d1d678d5d51f67b0443be08e6e]
+Apr-08 14:35:49.677 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:49.677 [Task submitter] INFO  nextflow.Session - [26/41bb83] Submitted process > mapping_bam (1)
+Apr-08 14:35:50.135 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: mapping_bam (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/26/41bb8386a2cc533f213ef784265394]
+Apr-08 14:35:50.138 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.139 [Task submitter] INFO  nextflow.Session - [c3/4a9d45] Submitted process > parse_fastq_qc (2)
+Apr-08 14:35:50.311 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: parse_fastq_qc (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c3/4a9d45b9a85bb1eb4eddf637b10d9c]
+Apr-08 14:35:50.320 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.320 [Task submitter] INFO  nextflow.Session - [14/f096ca] Submitted process > mapping_bam (2)
+Apr-08 14:35:50.399 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: trim_reads (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/29/5338fa891256815b836d330c955db2]
+Apr-08 14:35:50.402 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.402 [Task submitter] INFO  nextflow.Session - [27/4d9ba3] Submitted process > mapping_bam (3)
+Apr-08 14:35:50.596 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: trim_reads (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/d6/a54ffd540c21b1298c7069f2b3e487]
+Apr-08 14:35:50.600 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.600 [Task submitter] INFO  nextflow.Session - [89/511e80] Submitted process > parse_fastq_qc (3)
+Apr-08 14:35:50.811 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: trim_reads (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c8/7e78f78917d1f921119adefbf7110e]
+Apr-08 14:35:50.814 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.814 [Task submitter] INFO  nextflow.Session - [11/45f784] Submitted process > mapping_bam (4)
+Apr-08 14:35:50.890 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: mapping_bam (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/14/f096ca7164a57e32d3ef7941b71168]
+Apr-08 14:35:50.895 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.895 [Task submitter] INFO  nextflow.Session - [0d/6438d0] Submitted process > parse_fastq_qc (4)
+Apr-08 14:35:50.914 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: parse_fastq_qc (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/89/511e8027d4b2ac8325ce5741f21be3]
+Apr-08 14:35:50.918 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.919 [Task submitter] INFO  nextflow.Session - [22/d72d16] Submitted process > trim_reads (16)
+Apr-08 14:35:50.953 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: trim_reads (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/11/eb7fe2ce8326e7b7b8a85d2da424fe]
+Apr-08 14:35:50.957 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:50.957 [Task submitter] INFO  nextflow.Session - [48/da3c9d] Submitted process > mapping_bam (5)
+Apr-08 14:35:51.029 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: trim_reads (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3b/2d674b8d5e490aae0ec30fadda4cd3]
+Apr-08 14:35:51.043 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.043 [Task submitter] INFO  nextflow.Session - [c9/9adb23] Submitted process > parse_fastq_qc (5)
+Apr-08 14:35:51.061 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: parse_fastq_qc (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/0d/6438d0a1f85b27685a45d86a76b949]
+Apr-08 14:35:51.068 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.075 [Task submitter] INFO  nextflow.Session - [a5/d5c5a5] Submitted process > bam_indexing (1)
+Apr-08 14:35:51.195 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: bam_indexing (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a5/d5c5a501c976dd2d70b39b8b8b69f8]
+Apr-08 14:35:51.204 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: mapping_bam (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/48/da3c9d74e898808aa33819510b96dc]
+Apr-08 14:35:51.215 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.215 [Task submitter] INFO  nextflow.Session - [57/d84fdd] Submitted process > parse_read_align (1)
+Apr-08 14:35:51.234 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.237 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: parse_fastq_qc (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c9/9adb2355284dfa0475e6c133e478b5]
+Apr-08 14:35:51.242 [Task submitter] INFO  nextflow.Session - [06/4d4b94] Submitted process > bam_coverage (1)
+Apr-08 14:35:51.250 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.250 [Task submitter] INFO  nextflow.Session - [f6/67ca2b] Submitted process > parse_fastq_qc (6)
+Apr-08 14:35:51.253 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: trim_reads (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/7c/61f9ffde4d3f268dce061a88e62361]
+Apr-08 14:35:51.279 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.280 [Task submitter] INFO  nextflow.Session - [6b/e477af] Submitted process > mapping_bam (6)
+Apr-08 14:35:51.402 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: parse_read_align (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/57/d84fdd51134a94a9d947505af30ca8]
+Apr-08 14:35:51.411 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.411 [Task submitter] INFO  nextflow.Session - [3b/38b743] Submitted process > mapping_bam (7)
+Apr-08 14:35:51.437 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: parse_fastq_qc (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f6/67ca2bf1e9db6c16b6246aae4bf16c]
+Apr-08 14:35:51.443 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.443 [Task submitter] INFO  nextflow.Session - [3c/693580] Submitted process > parse_fastq_qc (7)
+Apr-08 14:35:51.474 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: mapping_bam (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/11/45f784e53d15277131e0d73622ba28]
+Apr-08 14:35:51.475 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: bam_coverage (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/06/4d4b94df47836835ee69b6a07752cd]
+Apr-08 14:35:51.478 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.479 [Task submitter] INFO  nextflow.Session - [e9/3495c3] Submitted process > mapping_bam (8)
+Apr-08 14:35:51.508 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.508 [Task submitter] INFO  nextflow.Session - [79/fd837b] Submitted process > parse_fastq_qc (8)
+Apr-08 14:35:51.557 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: trim_reads (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/0c/678e181ecbee9ea61aad4b8a1fe8a1]
+Apr-08 14:35:51.572 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.573 [Task submitter] INFO  nextflow.Session - [c4/5df683] Submitted process > bam_coverage (2)
+Apr-08 14:35:51.599 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: mapping_bam (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/27/4d9ba3e316e2555e1d350e76ce1479]
+Apr-08 14:35:51.601 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.602 [Task submitter] INFO  nextflow.Session - [36/abcc34] Submitted process > parse_read_align (2)
+Apr-08 14:35:51.675 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: parse_fastq_qc (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3c/693580b4ab905cfbd4084238d13f11]
+Apr-08 14:35:51.679 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.680 [Task submitter] INFO  nextflow.Session - [2d/d6a1f7] Submitted process > bam_indexing (2)
+Apr-08 14:35:51.694 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: bam_coverage (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c4/5df6837fbd56c1e28aeacf52491225]
+Apr-08 14:35:51.698 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.699 [Task submitter] INFO  nextflow.Session - [20/cb58c8] Submitted process > mapping_bam (9)
+Apr-08 14:35:51.794 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: bam_indexing (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/2d/d6a1f77cdc7dd3372d34cf728d6e5c]
+Apr-08 14:35:51.799 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.799 [Task submitter] INFO  nextflow.Session - [e0/1ce5ed] Submitted process > parse_fastq_qc (9)
+Apr-08 14:35:51.854 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: parse_fastq_qc (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/79/fd837b23e900993c59858731a6839b]
+Apr-08 14:35:51.861 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.861 [Task submitter] INFO  nextflow.Session - [39/0692fc] Submitted process > parse_fastq_qc (10)
+Apr-08 14:35:51.960 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: parse_fastq_qc (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/39/0692fc01d102367be1158ebd99dcad]
+Apr-08 14:35:51.964 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:51.964 [Task submitter] INFO  nextflow.Session - [49/de6230] Submitted process > mapping_bam (10)
+Apr-08 14:35:51.972 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: mapping_bam (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/6b/e477af6c54f68c600ac83c0fb2abef]
+Apr-08 14:35:51.999 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.000 [Task submitter] INFO  nextflow.Session - [17/479e4c] Submitted process > parse_read_align (3)
+Apr-08 14:35:52.011 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: parse_fastq_qc (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/e0/1ce5ed2e62c0bd8b6afb0743f32350]
+Apr-08 14:35:52.017 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.018 [Task submitter] INFO  nextflow.Session - [42/12a3fb] Submitted process > bam_coverage (3)
+Apr-08 14:35:52.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: trim_reads (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/e1/8b764363c509dcdc0d06be0d7d7056]
+Apr-08 14:35:52.097 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.098 [Task submitter] INFO  nextflow.Session - [50/662b90] Submitted process > bam_indexing (3)
+Apr-08 14:35:52.122 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: mapping_bam (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3b/38b7439cf42d82415cdbefeefde4aa]
+Apr-08 14:35:52.126 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.126 [Task submitter] INFO  nextflow.Session - [26/d03d7b] Submitted process > variant_calling (1)
+Apr-08 14:35:52.161 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: bam_coverage (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/42/12a3fbf574771a8d6859b80b8d7528]
+Apr-08 14:35:52.164 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.164 [Task submitter] INFO  nextflow.Session - [3f/911d3d] Submitted process > parse_fastq_qc (11)
+Apr-08 14:35:52.214 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: bam_indexing (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/50/662b90a5e0b092b2af7694d000e420]
+Apr-08 14:35:52.217 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.218 [Task submitter] INFO  nextflow.Session - [1c/c599d2] Submitted process > mapping_bam (11)
+Apr-08 14:35:52.286 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: parse_read_align (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/17/479e4cd6364179acc03a41fa214859]
+Apr-08 14:35:52.292 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.297 [Task submitter] INFO  nextflow.Session - [fa/30d080] Submitted process > parse_read_align (4)
+Apr-08 14:35:52.332 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: parse_fastq_qc (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3f/911d3d4ba7d02f2b3d43d8d501d1e5]
+Apr-08 14:35:52.343 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.343 [Task submitter] INFO  nextflow.Session - [c2/f8cab6] Submitted process > bam_indexing (4)
+Apr-08 14:35:52.439 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: trim_reads (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/b0/9a1757e6fbe0a805ad0dea9bac780a]
+Apr-08 14:35:52.442 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.442 [Task submitter] INFO  nextflow.Session - [94/fac567] Submitted process > bam_coverage (4)
+Apr-08 14:35:52.474 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: mapping_bam (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/20/cb58c8ae7d8f5c005b8d874301890a]
+Apr-08 14:35:52.477 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.477 [Task submitter] INFO  nextflow.Session - [3b/21408f] Submitted process > parse_fastq_qc (12)
+Apr-08 14:35:52.499 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: bam_indexing (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c2/f8cab6f3b7bc7e5970e7fa7fe05797]
+Apr-08 14:35:52.513 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: bam_coverage (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/94/fac567bff1579e705587064603be75]
+Apr-08 14:35:52.516 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.517 [Task submitter] INFO  nextflow.Session - [17/451440] Submitted process > mapping_bam (12)
+Apr-08 14:35:52.528 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.529 [Task submitter] INFO  nextflow.Session - [7d/957a0b] Submitted process > parse_read_align (5)
+Apr-08 14:35:52.559 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: mapping_bam (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/49/de6230b1fad3412be60f485155cf59]
+Apr-08 14:35:52.563 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: variant_calling (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/26/d03d7b94ad8439107ef288e3ed9ce1]
+Apr-08 14:35:52.563 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.564 [Task submitter] INFO  nextflow.Session - [f5/eda78f] Submitted process > bam_indexing (5)
+Apr-08 14:35:52.567 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.568 [Task submitter] INFO  nextflow.Session - [d2/e13735] Submitted process > bam_coverage (5)
+Apr-08 14:35:52.631 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: parse_read_align (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/36/abcc34676e3d5c43ffbc4e25161958]
+Apr-08 14:35:52.635 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.635 [Task submitter] INFO  nextflow.Session - [44/5f69d3] Submitted process > variant_calling (2)
+Apr-08 14:35:52.652 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 68; name: parse_fastq_qc (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3b/21408f9753a9b91e1e851233a17e54]
+Apr-08 14:35:52.656 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.656 [Task submitter] INFO  nextflow.Session - [cd/6c1c5f] Submitted process > parse_read_align (6)
+Apr-08 14:35:52.663 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: mapping_bam (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/1c/c599d223aa9da92daf069b29461965]
+Apr-08 14:35:52.665 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.665 [Task submitter] INFO  nextflow.Session - [b1/447613] Submitted process > bam_indexing (6)
+Apr-08 14:35:52.685 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 70; name: bam_indexing (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f5/eda78fe6643e5f10771a22be3cf22d]
+Apr-08 14:35:52.694 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.694 [Task submitter] INFO  nextflow.Session - [3d/5e67ea] Submitted process > bam_coverage (6)
+Apr-08 14:35:52.702 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 72; name: bam_coverage (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/d2/e137357c192f507d279671eafd9f00]
+Apr-08 14:35:52.707 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.707 [Task submitter] INFO  nextflow.Session - [31/8e9b5d] Submitted process > mapping_bam (13)
+Apr-08 14:35:52.710 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: bam_indexing (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/b1/447613cf7729aa8a357858042ecb25]
+Apr-08 14:35:52.717 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.718 [Task submitter] INFO  nextflow.Session - [ea/92f5be] Submitted process > parse_fastq_qc (13)
+Apr-08 14:35:52.808 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 77; name: parse_fastq_qc (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/ea/92f5be89655bc474bf59dc8da2387e]
+Apr-08 14:35:52.810 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.811 [Task submitter] INFO  nextflow.Session - [a7/e1756c] Submitted process > bam_indexing (7)
+Apr-08 14:35:52.889 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 76; name: bam_coverage (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3d/5e67eaa74964be24463e78171dc894]
+Apr-08 14:35:52.892 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.892 [Task submitter] INFO  nextflow.Session - [d7/835060] Submitted process > bam_coverage (7)
+Apr-08 14:35:52.939 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 79; name: bam_indexing (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a7/e1756cda238ede6cdd93bf4799fced]
+Apr-08 14:35:52.942 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.942 [Task submitter] INFO  nextflow.Session - [16/2ff149] Submitted process > parse_read_align (7)
+Apr-08 14:35:52.947 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 78; name: mapping_bam (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/31/8e9b5d06a7b45ff83ed166c5deba3e]
+Apr-08 14:35:52.948 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 80; name: bam_coverage (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/d7/83506040d9606cd6ebbbf9e12fa501]
+Apr-08 14:35:52.953 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.954 [Task submitter] INFO  nextflow.Session - [04/68b26c] Submitted process > variant_calling (3)
+Apr-08 14:35:52.962 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:52.962 [Task submitter] INFO  nextflow.Session - [d7/a8096e] Submitted process > parse_fastq_qc (14)
+Apr-08 14:35:53.001 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 83; name: parse_fastq_qc (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/d7/a8096e2ae8f907886ec115afcaf15b]
+Apr-08 14:35:53.005 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.006 [Task submitter] INFO  nextflow.Session - [b9/3e6557] Submitted process > mapping_bam (14)
+Apr-08 14:35:53.326 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 73; name: variant_calling (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/44/5f69d338537698cda4e4d4325cbf5a]
+Apr-08 14:35:53.330 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.330 [Task submitter] INFO  nextflow.Session - [1c/9feb55] Submitted process > bam_coverage (8)
+Apr-08 14:35:53.363 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 82; name: variant_calling (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/04/68b26ca72c0bf02763d39491285430]
+Apr-08 14:35:53.365 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.366 [Task submitter] INFO  nextflow.Session - [f9/625e6d] Submitted process > parse_read_align (8)
+Apr-08 14:35:53.368 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: parse_read_align (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/fa/30d08021a70743d163ec97013e990c]
+Apr-08 14:35:53.370 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.371 [Task submitter] INFO  nextflow.Session - [0d/0967a1] Submitted process > bam_indexing (8)
+Apr-08 14:35:53.397 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: mapping_bam (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/e9/3495c3c1095f28c5362fa7dec3c960]
+Apr-08 14:35:53.401 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.401 [Task submitter] INFO  nextflow.Session - [c7/ff32d9] Submitted process > variant_calling (4)
+Apr-08 14:35:53.460 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 87; name: bam_coverage (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/1c/9feb5544d9f3e3f1d2bb72fca3f3ea]
+Apr-08 14:35:53.462 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 86; name: bam_indexing (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/0d/0967a1fbdb10a828d6f72e8442aecf]
+Apr-08 14:35:53.464 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.465 [Task submitter] INFO  nextflow.Session - [3d/9757b7] Submitted process > bam_indexing (9)
+Apr-08 14:35:53.467 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.467 [Task submitter] INFO  nextflow.Session - [5c/98a0dd] Submitted process > bam_coverage (9)
+Apr-08 14:35:53.470 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 84; name: mapping_bam (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/b9/3e65571cc30118c03a472defe3ff02]
+Apr-08 14:35:53.477 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.477 [Task submitter] INFO  nextflow.Session - [72/059780] Submitted process > parse_read_align (9)
+Apr-08 14:35:53.510 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 89; name: bam_indexing (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3d/9757b72b6060d5f02216e550d63641]
+Apr-08 14:35:53.514 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.514 [Task submitter] INFO  nextflow.Session - [d4/78e617] Submitted process > consensus_generation (1)
+Apr-08 14:35:53.567 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 90; name: bam_coverage (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/5c/98a0dd4f402f6eaf664ee8b98cce61]
+Apr-08 14:35:53.569 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.570 [Task submitter] INFO  nextflow.Session - [25/abdfc7] Submitted process > bam_indexing (10)
+Apr-08 14:35:53.601 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 92; name: consensus_generation (1); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/d4/78e61746aaeaff6f4faacc7c1ffe87]
+Apr-08 14:35:53.604 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.604 [Task submitter] INFO  nextflow.Session - [17/3f2624] Submitted process > bam_coverage (10)
+Apr-08 14:35:53.708 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 94; name: bam_coverage (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/17/3f262473f1e6e2a5495c464ac1bf8b]
+Apr-08 14:35:53.711 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.711 [Task submitter] INFO  nextflow.Session - [31/ee5977] Submitted process > parse_read_align (10)
+Apr-08 14:35:53.808 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 93; name: bam_indexing (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/25/abdfc7125f612ac825479b5045ea42]
+Apr-08 14:35:53.811 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.811 [Task submitter] INFO  nextflow.Session - [b1/68e4f1] Submitted process > variant_calling (5)
+Apr-08 14:35:53.978 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 81; name: parse_read_align (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/16/2ff1494b08a6239d3a08a1820db61e]
+Apr-08 14:35:53.981 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:53.982 [Task submitter] INFO  nextflow.Session - [a7/235eba] Submitted process > variant_calling (6)
+Apr-08 14:35:54.213 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: mapping_bam (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/17/45144083824b819502258f27df6785]
+Apr-08 14:35:54.217 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.242 [Task submitter] INFO  nextflow.Session - [44/c02a79] Submitted process > bam_coverage (11)
+Apr-08 14:35:54.277 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 101; name: bam_coverage (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/44/c02a79b1040ba78910b29596f33cd7]
+Apr-08 14:35:54.284 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.315 [Task submitter] INFO  nextflow.Session - [8d/6812e0] Submitted process > parse_read_align (11)
+Apr-08 14:35:54.516 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 91; name: parse_read_align (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/72/05978028350842fc795ca43fe18163]
+Apr-08 14:35:54.519 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.520 [Task submitter] INFO  nextflow.Session - [4d/fd3639] Submitted process > bam_indexing (11)
+Apr-08 14:35:54.530 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 85; name: parse_read_align (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f9/625e6d2d53ef8ddada3e0dada6f2b9]
+Apr-08 14:35:54.532 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.533 [Task submitter] INFO  nextflow.Session - [c0/b1dd31] Submitted process > variant_calling (7)
+Apr-08 14:35:54.540 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 96; name: variant_calling (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/b1/68e4f108b3420b5116d4e86bd969ae]
+Apr-08 14:35:54.549 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.550 [Task submitter] INFO  nextflow.Session - [10/0e8ab7] Submitted process > consensus_generation (2)
+Apr-08 14:35:54.555 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: parse_read_align (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/cd/6c1c5fce2b221d97efd47f19ef4092]
+Apr-08 14:35:54.560 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.563 [Task submitter] INFO  nextflow.Session - [a7/880700] Submitted process > consensus_generation (3)
+Apr-08 14:35:54.565 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 97; name: variant_calling (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a7/235ebadfec23c490b542017c55eeef]
+Apr-08 14:35:54.578 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 99; name: bam_indexing (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/4d/fd36397ddfb46e35517a6b0300f6a5]
+Apr-08 14:35:54.584 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.584 [Task submitter] INFO  nextflow.Session - [17/a043f8] Submitted process > parse_read_align (12)
+Apr-08 14:35:54.587 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.587 [Task submitter] INFO  nextflow.Session - [f1/0d41f1] Submitted process > bam_indexing (12)
+Apr-08 14:35:54.629 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 88; name: variant_calling (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c7/ff32d91294cf837eb78bf6576837c1]
+Apr-08 14:35:54.630 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 95; name: parse_read_align (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/31/ee597758e3b940f65e628428fb6b57]
+Apr-08 14:35:54.632 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.632 [Task submitter] INFO  nextflow.Session - [88/7a20a0] Submitted process > bam_coverage (12)
+Apr-08 14:35:54.636 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.636 [Task submitter] INFO  nextflow.Session - [a5/6473c6] Submitted process > variant_calling (8)
+Apr-08 14:35:54.683 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 100; name: parse_read_align (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/8d/6812e066ac392327bc085c142d0da9]
+Apr-08 14:35:54.687 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.687 [Task submitter] INFO  nextflow.Session - [7c/c3fc91] Submitted process > bam_coverage (13)
+Apr-08 14:35:54.723 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 102; name: consensus_generation (2); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/10/0e8ab7b22cb97bad81fe055d412ecd]
+Apr-08 14:35:54.726 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.726 [Task submitter] INFO  nextflow.Session - [56/97f748] Submitted process > parse_read_align (13)
+Apr-08 14:35:54.774 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 103; name: consensus_generation (3); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a7/880700ccff5ab349a4729c027043ff]
+Apr-08 14:35:54.777 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.778 [Task submitter] INFO  nextflow.Session - [3f/bbcbf9] Submitted process > bam_indexing (13)
+Apr-08 14:35:54.789 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 105; name: bam_indexing (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f1/0d41f10143dd78f55fbd3c00a367b1]
+Apr-08 14:35:54.792 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.792 [Task submitter] INFO  nextflow.Session - [a9/cd3d25] Submitted process > variant_calling (9)
+Apr-08 14:35:54.891 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 109; name: bam_indexing (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/3f/bbcbf96ced79867b7d6d0c05ce56b8]
+Apr-08 14:35:54.894 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.894 [Task submitter] INFO  nextflow.Session - [91/fc20a6] Submitted process > variant_calling (10)
+Apr-08 14:35:54.902 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 110; name: bam_coverage (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/7c/c3fc917029707e2732d02502f7a371]
+Apr-08 14:35:54.912 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.913 [Task submitter] INFO  nextflow.Session - [d8/8a3050] Submitted process > bam_coverage (14)
+Apr-08 14:35:54.933 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 106; name: bam_coverage (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/88/7a20a0d673d11b0250ca5d10f0c957]
+Apr-08 14:35:54.939 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:54.940 [Task submitter] INFO  nextflow.Session - [7b/17afbc] Submitted process > parse_read_align (14)
+Apr-08 14:35:55.255 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 113; name: bam_coverage (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/d8/8a3050d6bb984431e1bd7a52afedc1]
+Apr-08 14:35:55.259 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.259 [Task submitter] INFO  nextflow.Session - [14/d92956] Submitted process > bam_indexing (14)
+Apr-08 14:35:55.328 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 114; name: bam_indexing (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/14/d92956371a5fc0cc28d7618a563d66]
+Apr-08 14:35:55.332 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.332 [Task submitter] INFO  nextflow.Session - [ab/3b78f7] Submitted process > consensus_generation (4)
+Apr-08 14:35:55.371 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: parse_read_align (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/7d/957a0b64d1d9a031e0ac1a1036e008]
+Apr-08 14:35:55.375 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.375 [Task submitter] INFO  nextflow.Session - [f1/0a5f5b] Submitted process > consensus_generation (5)
+Apr-08 14:35:55.386 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 112; name: variant_calling (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/91/fc20a6855c54ea260021e63290b6cf]
+Apr-08 14:35:55.394 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.394 [Task submitter] INFO  nextflow.Session - [4a/d495b8] Submitted process > variant_calling (11)
+Apr-08 14:35:55.421 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 116; name: consensus_generation (4); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/ab/3b78f77c96c744a84ccc578f3c3b8e]
+Apr-08 14:35:55.428 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.428 [Task submitter] INFO  nextflow.Session - [c7/fefd25] Submitted process > consensus_generation (6)
+Apr-08 14:35:55.436 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 107; name: variant_calling (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a5/6473c62ab647ff3c1c0ca812a736ff]
+Apr-08 14:35:55.440 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.442 [Task submitter] INFO  nextflow.Session - [fc/976773] Submitted process > variant_calling (12)
+Apr-08 14:35:55.536 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 117; name: consensus_generation (5); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f1/0a5f5b5fc7c5f39f6fae89bd3538f7]
+Apr-08 14:35:55.539 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.539 [Task submitter] INFO  nextflow.Session - [4c/20722c] Submitted process > variant_calling (13)
+Apr-08 14:35:55.570 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: trim_reads (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/2f/a38f5be099212b6fa38b1503769d3e]
+Apr-08 14:35:55.574 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.574 [Task submitter] INFO  nextflow.Session - [20/32ee1d] Submitted process > variant_calling (14)
+Apr-08 14:35:55.596 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 108; name: parse_read_align (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/56/97f748b2c73db39ab7297f9c5f21af]
+Apr-08 14:35:55.604 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.612 [Task submitter] INFO  nextflow.Session - [fb/0606ae] Submitted process > consensus_generation (7)
+Apr-08 14:35:55.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 119; name: consensus_generation (6); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c7/fefd25dc5f934d03bbd074969aece3]
+Apr-08 14:35:55.727 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.728 [Task submitter] INFO  nextflow.Session - [9b/a6c3b1] Submitted process > consensus_generation (8)
+Apr-08 14:35:55.778 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 111; name: variant_calling (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a9/cd3d25b4f1eda2dd9039f476085e6e]
+Apr-08 14:35:55.786 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.787 [Task submitter] INFO  nextflow.Session - [1e/584b2d] Submitted process > mapping_bam (15)
+Apr-08 14:35:55.788 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 98; name: variant_calling (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/c0/b1dd31526444ed2748f8fb35ba22a1]
+Apr-08 14:35:55.794 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.794 [Task submitter] INFO  nextflow.Session - [23/30fb10] Submitted process > parse_fastq_qc (15)
+Apr-08 14:35:55.870 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 123; name: consensus_generation (7); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/fb/0606aea3aab2bdd60174e996735a29]
+Apr-08 14:35:55.894 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:55.894 [Task submitter] INFO  nextflow.Session - [db/4a679e] Submitted process > consensus_generation (9)
+Apr-08 14:35:55.999 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 124; name: consensus_generation (8); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/9b/a6c3b10db0215932b529887e9c615b]
+Apr-08 14:35:56.039 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 127; name: consensus_generation (9); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/db/4a679e5bd3976d37f05b072a79aab7]
+Apr-08 14:35:56.044 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 118; name: variant_calling (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/4a/d495b872efa3ead0b7c3200173690e]
+Apr-08 14:35:56.061 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:56.061 [Task submitter] INFO  nextflow.Session - [da/7c3ce4] Submitted process > consensus_generation (10)
+Apr-08 14:35:56.095 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:56.096 [Task submitter] INFO  nextflow.Session - [f3/134e75] Submitted process > consensus_generation (11)
+Apr-08 14:35:56.142 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 129; name: consensus_generation (11); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f3/134e758c8f430eb76be1024b830626]
+Apr-08 14:35:56.190 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 128; name: consensus_generation (10); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/da/7c3ce4b24b051385db894c81002213]
+Apr-08 14:35:56.207 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 126; name: parse_fastq_qc (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/23/30fb108dcb8dbb309c7ea078018f50]
+Apr-08 14:35:56.353 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 121; name: variant_calling (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/4c/20722ca8c4c12e1e7a983b1e2b3839]
+Apr-08 14:35:56.377 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:56.377 [Task submitter] INFO  nextflow.Session - [f5/ba8a9f] Submitted process > consensus_generation (12)
+Apr-08 14:35:56.426 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 130; name: consensus_generation (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/f5/ba8a9fee1a9c2f32ec600b3f905dc1]
+Apr-08 14:35:57.313 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 122; name: variant_calling (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/20/32ee1db3807ad2a5ef973aa8a26434]
+Apr-08 14:35:57.324 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:57.325 [Task submitter] INFO  nextflow.Session - [87/c71417] Submitted process > consensus_generation (13)
+Apr-08 14:35:57.344 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 131; name: consensus_generation (13); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/87/c714171843b44e54319a8e344566f0]
+Apr-08 14:35:57.432 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 115; name: parse_read_align (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/7b/17afbc700eae4e874c637bc10512b6]
+Apr-08 14:35:57.597 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 104; name: parse_read_align (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/17/a043f8c4d3dd97bf9f5359b2f19611]
+Apr-08 14:35:57.620 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 125; name: mapping_bam (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/1e/584b2d1c2e97f61195c3bbfef23da0]
+Apr-08 14:35:57.629 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:57.630 [Task submitter] INFO  nextflow.Session - [66/b0f064] Submitted process > bam_indexing (15)
+Apr-08 14:35:57.633 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:57.634 [Task submitter] INFO  nextflow.Session - [71/37d708] Submitted process > bam_coverage (15)
+Apr-08 14:35:57.639 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:57.640 [Task submitter] INFO  nextflow.Session - [cf/e319cc] Submitted process > parse_read_align (15)
+Apr-08 14:35:57.699 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 133; name: bam_indexing (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/66/b0f06451cbd1f737ba0f51b5914b36]
+Apr-08 14:35:57.711 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:57.712 [Task submitter] INFO  nextflow.Session - [73/b3314b] Submitted process > variant_calling (15)
+Apr-08 14:35:57.940 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 120; name: variant_calling (12); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/fc/976773a7daedeed9e524579b731bf6]
+Apr-08 14:35:57.948 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:57.948 [Task submitter] INFO  nextflow.Session - [b7/80e1da] Submitted process > consensus_generation (14)
+Apr-08 14:35:57.960 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 134; name: bam_coverage (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/71/37d708c7d27dae246d890fdd3077ce]
+Apr-08 14:35:57.977 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 136; name: consensus_generation (14); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/b7/80e1da07b2d53be212fc654dd2ae62]
+Apr-08 14:35:58.309 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: trim_reads (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/22/d72d16448fa369c73c68ecd0d4bc4d]
+Apr-08 14:35:58.315 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:58.316 [Task submitter] INFO  nextflow.Session - [57/dfbcb6] Submitted process > parse_fastq_qc (16)
+Apr-08 14:35:58.334 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:58.334 [Task submitter] INFO  nextflow.Session - [a3/81bf2b] Submitted process > mapping_bam (16)
+Apr-08 14:35:58.410 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 137; name: parse_fastq_qc (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/57/dfbcb6abce88024c8adf1e45266121]
+Apr-08 14:35:58.523 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 135; name: variant_calling (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/73/b3314bf2910bf47150d891974a2130]
+Apr-08 14:35:58.531 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:58.531 [Task submitter] INFO  nextflow.Session - [21/25b962] Submitted process > consensus_generation (15)
+Apr-08 14:35:58.549 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 139; name: consensus_generation (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/21/25b9621b113f98cd341d3610688abe]
+Apr-08 14:35:58.977 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 138; name: mapping_bam (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/a3/81bf2b58f15deda3614dbe70d76674]
+Apr-08 14:35:58.984 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:58.985 [Task submitter] INFO  nextflow.Session - [37/140050] Submitted process > parse_read_align (16)
+Apr-08 14:35:58.987 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:58.987 [Task submitter] INFO  nextflow.Session - [97/c42af7] Submitted process > bam_coverage (16)
+Apr-08 14:35:58.988 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:58.989 [Task submitter] INFO  nextflow.Session - [8f/357be0] Submitted process > bam_indexing (16)
+Apr-08 14:35:59.017 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 140; name: bam_indexing (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/8f/357be0fca57995227af0214b71be21]
+Apr-08 14:35:59.024 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:35:59.024 [Task submitter] INFO  nextflow.Session - [98/79c348] Submitted process > variant_calling (16)
+Apr-08 14:35:59.111 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 142; name: bam_coverage (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/97/c42af7b50fbaad590ecec86babfa1b]
+Apr-08 14:36:00.145 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 143; name: variant_calling (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/98/79c34866c20d740b5aa30b04873a8c]
+Apr-08 14:36:00.153 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-08 14:36:00.154 [Task submitter] INFO  nextflow.Session - [fa/91f1a5] Submitted process > consensus_generation (16)
+Apr-08 14:36:00.170 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 144; name: consensus_generation (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/fa/91f1a50d81a632326f05faa7545f36]
+Apr-08 14:36:00.526 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 141; name: parse_read_align (16); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/37/14005076ee2318bb236e26ee9a64ee]
+Apr-08 14:36:01.139 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 132; name: parse_read_align (15); status: COMPLETED; exit: 0; error: -; workDir: /home/etudiant/fatemeh/hbv_pipeline/src/work/cf/e319cc782abacd5f405c0441a71661]
+Apr-08 14:36:01.141 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-08 14:36:01.242 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-08 14:36:01.243 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-08 14:36:01.250 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Apr-08 14:36:01.253 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Apr-08 14:36:01.258 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=144; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2m 4s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=15; peakCpus=15; peakMemory=0; ]
+Apr-08 14:36:01.465 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-08 14:36:01.492 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Apr-08 14:36:01.492 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

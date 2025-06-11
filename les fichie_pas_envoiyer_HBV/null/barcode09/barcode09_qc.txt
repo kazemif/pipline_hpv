@@ -1,0 +1,3 @@
+QC report for barcode09
+Number of reads: 43937
+Total lines: 175748

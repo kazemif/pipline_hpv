@@ -1,0 +1,12 @@
+🔍 Analyse de barcode01
+2025-05-05 15:47:30 Defining chunks
+2025-05-05 15:47:30 Process will use 1 CPU and deal arround 4212 reads/CPU
+2025-05-05 15:47:30 Performing parallel processing
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP Tue Nov 5 00:21:55 UTC 2024
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 3.39 Mo
+2025-05-05 15:48:04 Combining chunk results
+2025-05-05 15:48:04 Summarizing chunk results
+2025-05-05 15:48:04 Writting results
+2025-05-05 15:48:04 Running time: 0.0h:0.0m:34.0s::42

@@ -12,3 +12,6 @@ process merge_fastq {
     cat ${fastq_files.join(' ')} > ${sample_id}.merged.fastq.gz
     """
 }
+
+
+

@@ -1,0 +1,14 @@
+🔍 Traitement de : barcode11
+2025-04-28 15:15:58 Converting BAM file in SAM one
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP Tue Nov 5 00:21:55 UTC 2024
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 4.7 Mo
+2025-04-28 15:15:58 Defining chunks
+2025-04-28 15:15:58 Process will use 1 CPU and deal arround 14670 reads/CPU
+2025-04-28 15:15:58 Performing parallel processing
+2025-04-28 15:17:19 Combining chunk results
+2025-04-28 15:17:19 Summarizing chunk results
+2025-04-28 15:17:19 Writting results
+2025-04-28 15:17:19 Running time: 0.0h:1.0m:20.0s::78
+⚠️ Aucun fichier CSV généré

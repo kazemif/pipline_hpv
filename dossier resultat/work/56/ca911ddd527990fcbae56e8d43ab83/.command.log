@@ -1,0 +1,18 @@
+🔍 Traitement de : barcode14
+2025-04-28 15:01:14 Defining chunks
+2025-04-28 15:01:14 Process will use 1 CPU and deal arround 237 reads/CPU
+2025-04-28 15:01:14 Performing parallel processing
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP Tue Nov 5 00:21:55 UTC 2024
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 388.37 Ko
+2025-04-28 15:01:18 Combining chunk results
+2025-04-28 15:01:18 Summarizing chunk results
+2025-04-28 15:01:18 Writting results
+2025-04-28 15:01:18 Running time: 0h:0m:3s::91
+📁 Fichiers générés :
+total 36K
+-rw-r--r-- 1 etudiant etudiant 2.2K Apr 28 15:01 barcode14_GC_content.txt
+-rw-r--r-- 1 etudiant etudiant  22K Apr 28 15:01 barcode14_per_base_seq_score.txt
+-rw-r--r-- 1 etudiant etudiant 1.3K Apr 28 15:01 barcode14_read_length.txt
+-rw-r--r-- 1 etudiant etudiant 2.3K Apr 28 15:01 barcode14_seq_score.txt

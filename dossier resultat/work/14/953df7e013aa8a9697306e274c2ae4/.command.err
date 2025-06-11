@@ -1,0 +1,8 @@
+2025-04-25 13:59:59 Defining chunks
+2025-04-25 13:59:59 Process will use 1 CPU and deal arround 51 reads/CPU
+2025-04-25 13:59:59 Performing parallel processing
+2025-04-25 14:00:01 Combining chunk results
+2025-04-25 14:00:01 Summarizing chunk results
+2025-04-25 14:00:01 Writting results
+2025-04-25 14:00:01 Running time: 0h:0m:1s::45
+mv: target 'fastq_qc_barcode13.stat.tsv': No such file or directory

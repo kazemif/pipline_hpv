@@ -1,0 +1,3 @@
+QC report for barcode16
+Number of reads: 13619
+Total lines: 54476

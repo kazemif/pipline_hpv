@@ -1,0 +1,3 @@
+This is cutadapt 5.0 with Python 3.10.14
+Command line parameters: -a file:HBV_primer.fasta -m 150 -M 1200 -q 10 -j 4 -o barcode07_trim_reads.fastq.gz barcode07.merged.fastq.gz
+Processing single-end reads on 4 cores ...

@@ -1,0 +1,18 @@
+🔍 Traitement de : barcode16
+2025-06-10 10:27:56 Defining chunks
+2025-06-10 10:27:56 Process will use 1 CPU and deal arround 13619 reads/CPU
+2025-06-10 10:27:56 Performing parallel processing
+SYSTEM INFO: os: Linux
+SYSTEM INFO: os version: #1 SMP PREEMPT_DYNAMIC Mon Apr 21 17:08:54 UTC 2025
+SYSTEM INFO: CPU: 12
+INPUT INFO: File size: 16.22 Mo
+2025-06-10 10:31:00 Combining chunk results
+2025-06-10 10:31:01 Summarizing chunk results
+2025-06-10 10:31:01 Writting results
+2025-06-10 10:31:01 Running time: 0h:3m:4s::39
+📁 Fichiers générés :
+total 72K
+-rw-r--r-- 1 etudiant etudiant  13K Jun 10 10:31 barcode16_GC_content.txt
+-rw-r--r-- 1 etudiant etudiant  22K Jun 10 10:31 barcode16_per_base_seq_score.txt
+-rw-r--r-- 1 etudiant etudiant 6.5K Jun 10 10:31 barcode16_read_length.txt
+-rw-r--r-- 1 etudiant etudiant  24K Jun 10 10:31 barcode16_seq_score.txt

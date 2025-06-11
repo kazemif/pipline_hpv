@@ -1,3 +1,0 @@
-Sample ID       : barcode08
-Nombre de lignes: 1940
-Taille fichier  : 4.0K

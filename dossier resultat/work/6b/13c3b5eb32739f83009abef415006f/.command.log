@@ -1,0 +1,13 @@
+
+
+processing file: rapport_final.Rmd
+1/24                   
+2/24 [setup]           
+Error in `file.path()`:
+! object 'base_dir' not found
+Backtrace:
+ 1. base::list.dirs(...)
+ 2. base::file.path(base_dir)
+
+Quitting from lines 13-57 [setup] (rapport_final.Rmd)
+Execution halted

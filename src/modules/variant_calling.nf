@@ -1,15 +1,12 @@
 process variant_calling {
+    tag "$sample_id"
 
     input:
     tuple val(sample_id), path(bam_file), path(bai_file)
     path ref_genome
 
-    //output:
-    //path("${sample_id}.sorted.vcf.gz")
-    //path("${sample_id}.sorted.vcf.gz.tbi")
     output:
     tuple val(sample_id), path("${sample_id}.sorted.vcf.gz"), path("${sample_id}.sorted.vcf.gz.tbi")
-
 
     publishDir "${params.result_dir ?: './results'}/${sample_id}", mode: 'copy'
 

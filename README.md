@@ -1,95 +1,91 @@
-# HBV Pipeline (Nextflow DSL2)
+# Pipeline d’analyse HBV – Nextflow + RMarkdown
 
-Ce pipeline bioinformatique en Nextflow permet de traiter des fichiers FASTQ , allant de la fusion des reads jusqu'à la génération d'une séquence consensus. Il est conçu pour être exécuté facilement grâce à un script Python ou Bash.
+Ce projet implémente un pipeline bioinformatique complet pour analyser des lectures FASTQ issues de séquençage HBV (hépatite B).  
+Il inclut le prétraitement, l’alignement, le QC, la couverture, l’appel de variants et la génération automatique d’un **rapport HTML interactif**.
 
-## Fonctionnalités principales 🌐
+...
 
-- Détection automatique du type d'entrée (archive, fichier unique, dossier plat ou multiplex)
-- Fusion et trimming des reads
-- Contrôle qualité des FASTQ
-- Mapping contre un génome de référence
-- Indexation et calcul de couverture BAM
-- Appel de variants et filtrage
-- Génération de séquences consensus par barcode
+📌 *Le dossier `results/` sera créé automatiquement à la racine pour stocker tous les résultats.*
 
-## Prérequis ⚡
+...
+# Pipeline d’analyse HBV – Nextflow + RMarkdown
 
-- [Nextflow](https://www.nextflow.io/)
-- Python 3 (si vous utilisez `run_pipeline.py`)
-- Génome de référence FASTA (ex: `Ref/sequence.fasta`)
-- Fichier d'amorce (ex: `primer/HBV_primer.fasta`)
+Ce projet implémente un pipeline bioinformatique complet pour analyser des lectures FASTQ issues de séquençage HBV (hépatite B).  
+Il inclut le prétraitement, l’alignement, le QC, la couverture, l’appel de variants et la génération automatique d’un **rapport HTML interactif**.
 
-## Structure recommandée du projet 📁
+---
 
-```
-.
-├── data_test/             # Données d'exemple
-│   └── hbv/            # FASTQ.gz (plat ou multiplex)
-├── Ref/                   # Contient sequence.fasta (référence)
-├── primer/                # Contient HBV_primer.fasta
-├── modules/               # Modules Nextflow DSL2
+## 📁 Structure du projet
+
+hbv_pipeline/
+├── data_test/ # Données d'exemple avec sous-dossiers barcode01 à barcode16
+├── results/ # Résultats générés automatiquement
+│ ├── barcode01/
+│ ├── ...
+│ └── reports/ # Rapport HTML final ici
 ├── src/
-│   ├── main.nf         # Pipeline principal
-│   └── nextflow.config
-├── run_pipeline.py        # Script de lancement Python
-├── .gitignore             # Pour exclure les fichiers volumineux
-└── results/               # Résultats générés
-```
+│ ├── script_pipeline.py # Script Python principal
+│ ├── main.nf # Pipeline Nextflow
+│ ├── rapport_final.Rmd # Rapport HTML généré avec RMarkdown
+│ └── fonctions_globales.R # Fonctions pour les graphiques QC
 
-## Utilisation 
 
-### 1. Avec Python (recommandé)
+
+---
+
+## 🚀 Exécution du pipeline
+
+Lancez le pipeline et générez le rapport HTML automatiquement avec la commande suivante :
+
 ```bash
-python3 run_pipeline.py data_test/hbv Ref/sequence.fasta results/
-```
+cd ~/fatemeh/hbv_pipeline
 
-### 2. Avec Bash (alternatif)
-```bash
-chmod +x run_pipeline.sh
-./run_pipeline.sh data_test/hbv Ref/sequence.fasta results/
-```
-
-## Exemple de sortie 📊
-Le pipeline génère :
-- BAM, VCF et fichiers de couverture par barcode
-- Fichiers BED de faible couverture
-- Séquences consensus FASTA (1 par barcode)
-- Statistiques QC (parse_fastq_qc, parse_variant_qc...)
-
-## Fichier `.gitignore` ❌
-Pour éviter de pousser des fichiers volumineux sur GitHub, ajoutez :
-```
-results/
-data_test/
-*.fastq.gz
-*.bam
-*.vcf
-*.html
-*.zip
-*.tar.gz
-__pycache__/
-```
-
-## Conseils de bonne pratique ✅
-- Ne pas obliger l'utilisateur à modifier manuellement le script.
-- Prévoir un script d’exécution (comme `run_pipeline.py`) acceptant des arguments.
-- Inclure un README clair pour faciliter l'utilisation.
-- Ajouter le dossier `Ref/` dans GitHub pour inclure le génome référentiel.
+python3 src/script_pipeline.py \
+  --input data_test/hbv \
+  --rmd src/rapport_final.Rmd \
+  --output_dir results/reports
 
 
- ## Pour lancer tout le pipeline automatiquement avec Python
-- python3 run_pipeline.py data_test/ Ref/sequence.fasta results/
-
- Arguments :
- data_test/ : dossier contenant les fichiers .fastq ou .fastq.gz
- Ref/sequence.fasta : fichier FASTA du génome de référence
- results/ : dossier de sortie pour les résultats
-
- Le script détecte automatiquement :
- Le type d'entrée (.tar.gz, fichier unique, dossier plat ou multiplex)
- Et exécute le pipeline complet sans intervention manuelle !
 
 
-## Auteur 👤
-Fatemeh Kazemi  
-M2 Bioinformatique - Sorbonne Université
+
+
+Contenu du rapport HTML
+Le rapport contient :
+
+Composition en GC (reads bruts)
+
+Longueur des reads (bruts)
+
+Score qualité Phred (bruts)
+
+Score par position
+
+GC des reads alignés
+
+Proportions reads mappés / unmappés
+
+Longueur reads mappés
+
+Qualité du mapping
+
+Score Phred des reads mappés
+
+Heatmap de la couverture
+
+Tableau résumé de couverture
+
+
+Astuce
+Pour supprimer tous les résultats et relancer le pipeline proprement :
+
+bash
+Copier
+Modifier
+rm -rf results/
+
+🙋‍♀️ Auteure
+Fatemeh Kazemi
+Université Sorbonne – M2 Bioinformatique
+
+

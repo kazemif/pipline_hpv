@@ -1,0 +1,8 @@
+2025-04-25 14:34:10 Defining chunks
+2025-04-25 14:34:10 Process will use 1 CPU and deal arround 51 reads/CPU
+2025-04-25 14:34:10 Performing parallel processing
+2025-04-25 14:34:11 Combining chunk results
+2025-04-25 14:34:11 Summarizing chunk results
+2025-04-25 14:34:11 Writting results
+2025-04-25 14:34:11 Running time: 0h:0m:0s::79
+/home/etudiant/fatemeh/hbv_pipeline/src/work/19/945509d98be5e085417de56375cd89/.command.sh: line 25: zip: command not found

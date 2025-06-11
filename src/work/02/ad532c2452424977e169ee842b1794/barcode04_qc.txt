@@ -1,3 +1,0 @@
-QC report for barcode04
-Number of reads: 2293
-Total lines: 9172
