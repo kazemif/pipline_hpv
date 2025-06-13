@@ -1,0 +1,2 @@
+[console_scripts]
+parse_fastq = parse_fastq.main:main

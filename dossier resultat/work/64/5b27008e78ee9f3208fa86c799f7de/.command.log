@@ -1,3 +1,0 @@
-usage: parse_variant.py [-h] [-b BAM] [-s SAM] [-f REF] [-v VCF] [-t THRESHOLD] [-d MIN_DEPTH] [-c CPU] [-ov OUT_VCF]
-                        [-op OUT_PILEUP]
-parse_variant.py: error: unrecognized arguments: --input barcode13.sorted.vcf.gz --output barcode13_variant_metrics.csv --sample barcode13

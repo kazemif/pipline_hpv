@@ -1,0 +1,14 @@
+setup.py
+parse_fastq/__init__.py
+parse_fastq/chunk_process.py
+parse_fastq/edit_result.py
+parse_fastq/init.py
+parse_fastq/main.py
+parse_fastq/parallel_read.py
+parse_fastq/quantile_estimator.py
+parse_fastq/read_process.py
+parse_fastq.egg-info/PKG-INFO
+parse_fastq.egg-info/SOURCES.txt
+parse_fastq.egg-info/dependency_links.txt
+parse_fastq.egg-info/entry_points.txt
+parse_fastq.egg-info/top_level.txt

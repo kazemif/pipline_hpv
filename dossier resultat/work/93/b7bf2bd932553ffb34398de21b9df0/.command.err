@@ -1,1 +1,0 @@
-Input file format not recognized. The file starts with b'\x1f\x8b\x08\x00', but files in supported formats start with '>' (FASTA), '@' (FASTQ) or 'BAM'

@@ -1,3 +1,0 @@
-Sample ID       : barcode07
-Nombre de lignes: 4568
-Taille fichier  : 4.0K

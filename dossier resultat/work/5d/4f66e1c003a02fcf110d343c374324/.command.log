@@ -1,3 +1,0 @@
-[E::hts_idx_push] NO_COOR reads not in a single block at the end 0 -1
-[E::sam_index] Read '08e664fe-c14c-48fd-a45e-761e0a643b62' with ref_name='AF384372.1', ref_length=3125, flags=0, pos=3036 cannot be indexed
-samtools index: failed to create index for "barcode01.bam"

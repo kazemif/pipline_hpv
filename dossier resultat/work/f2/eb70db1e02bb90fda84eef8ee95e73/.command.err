@@ -1,4 +1,0 @@
-Error: The directory '/home/etudiant/fatemeh/hbv_pipeline/src/work/f2/eb70db1e02bb90fda84eef8ee95e73/reports' does not exist.
-In addition: Warning message:
-In dir.create(output_dir, recursive = TRUE) : 'reports' already exists
-Execution halted

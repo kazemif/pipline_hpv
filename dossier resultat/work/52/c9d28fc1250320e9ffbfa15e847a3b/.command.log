@@ -1,3 +1,0 @@
-[E::hts_idx_push] Unsorted positions on sequence #1: 1387 followed by 1101
-[E::sam_index] Read 'f07c839b-161e-4a80-ae75-40e7194db449' with ref_name='AF384372.1', ref_length=3125, flags=16, pos=1101 cannot be indexed
-samtools index: failed to create index for "barcode14.bam"

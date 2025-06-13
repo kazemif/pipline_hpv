@@ -1,0 +1,13 @@
+setup.py
+parse_read_align/__init__.py
+parse_read_align/chunk_process.py
+parse_read_align/edit_result.py
+parse_read_align/init.py
+parse_read_align/main.py
+parse_read_align/parallel_read.py
+parse_read_align/read_process.py
+parse_read_align.egg-info/PKG-INFO
+parse_read_align.egg-info/SOURCES.txt
+parse_read_align.egg-info/dependency_links.txt
+parse_read_align.egg-info/entry_points.txt
+parse_read_align.egg-info/top_level.txt

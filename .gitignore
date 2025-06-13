@@ -1,9 +1,24 @@
-results/
+#  Dossiers de sortie / données locales
+
 data_test/
+
+#  Fichiers de séquençage
 *.fastq
 *.fastq.gz
 *.bam
 *.vcf
 *.html
-__pycache__/
-data_test/
+
+
+
+# Nextflow
+.nextflow/
+.nextflow.log
+
+#  Autres fichiers à ignorer
+*.zip
+*.tar.gz
+*.log
+*.tmp
+.DS_Store
+

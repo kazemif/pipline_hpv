@@ -1,0 +1,10 @@
+name: parse_read_align
+channels:
+   - conda-forge
+   - bioconda
+dependencies:
+   - python=3.12
+   - pandas=2.1.2
+   - samtools=1.20
+   - pip:
+      - argparse==1.4.0

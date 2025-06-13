@@ -1,1 +1,0 @@
-/home/etudiant/fatemeh/hbv_pipeline/src/generate_report.py

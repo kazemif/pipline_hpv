@@ -1,0 +1,2 @@
+[console_scripts]
+parse_variant = parse_variant.main:main

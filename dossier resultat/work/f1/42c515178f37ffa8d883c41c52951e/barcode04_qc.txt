@@ -1,3 +1,0 @@
-Sample ID       : barcode04
-Nombre de lignes: 3932
-Taille fichier  : 4.0K

@@ -1,4 +1,0 @@
-read	occurence
-Mapped	8
-No mapped	44
-total	52

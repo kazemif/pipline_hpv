@@ -1,1 +1,0 @@
-CHROM	POS	DP	AD	Relative_AD

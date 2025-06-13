@@ -1,0 +1,14 @@
+setup.py
+parse_variant/__init__.py
+parse_variant/check.py
+parse_variant/init.py
+parse_variant/main.py
+parse_variant/parse_vcf.py
+parse_variant/pileup.py
+parse_variant/samtools.py
+parse_variant/write.py
+parse_variant.egg-info/PKG-INFO
+parse_variant.egg-info/SOURCES.txt
+parse_variant.egg-info/dependency_links.txt
+parse_variant.egg-info/entry_points.txt
+parse_variant.egg-info/top_level.txt

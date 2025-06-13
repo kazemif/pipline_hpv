@@ -1,5 +1,0 @@
-Fichier : barcode08_trim_reads.fastq.gz
-Nombre de lignes :
-24040
-Taille fichier :
-4.0K	barcode08_trim_reads.fastq.gz
