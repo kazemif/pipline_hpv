@@ -38,11 +38,11 @@ Il inclut le prétraitement, l’alignement, le contrôle qualité, le calcul de
 🛠️ Pour exécuter le pipeline :
 bash
 
-git clone https://github.com/kazemif/pipline_hpv.git
-cd pipline_hpv
-conda env create -f environment.yml
-conda activate hbv_pipeline
-./run_pipeline.sh
+- git clone https://github.com/kazemif/pipline_hpv.git
+- cd pipline_hpv
+- conda env create -f environment.yml
+- conda activate hbv_pipeline
+- ./run_pipeline.sh
 
 
 ## 📁 Structure du projet
