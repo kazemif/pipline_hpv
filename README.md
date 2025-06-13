@@ -50,23 +50,23 @@ bash
 
 
 hbv_pipeline/
-├── data_test/ # Données de test avec barcode01 à barcode16
-├── results/ # Résultats générés automatiquement
-│ ├── barcode01/
-│ ├── ...
-│ └── reports/ # Rapport HTML final ici
-├── src/
-│ ├── main.nf # Pipeline Nextflow
-│ ├── script_pipeline.py # Script principal Python
-│ ├── rapport_final.Rmd # Rapport RMarkdown
-│ └── fonctions_globales.R # Fonctions pour les graphiques QC
-├── tools/
-│ └── python/
-│ ├── parse_fastq/
-│ ├── parse_read_align/
-│ └── parse_variant/
-├── environment.yml
-└── README.md
+- ├── data_test/ # Données de test avec barcode01 à barcode16
+- ├── results/ # Résultats générés automatiquement
+- │ ├── barcode01/
+- │ ├── ...
+- │ └── reports/ # Rapport HTML final ici
+- ├── src/
+- │ ├── main.nf # Pipeline Nextflow
+- │ ├── script_pipeline.py # Script principal Python
+- │ ├── rapport_final.Rmd # Rapport RMarkdown
+- │ └── fonctions_globales.R # Fonctions pour les graphiques QC
+- ├── tools/
+- │ └── python/
+- │ ├── parse_fastq/
+- │ ├── parse_read_align/
+- │ └── parse_variant/
+- ├── environment.yml
+- └── README.md
 
 
 
